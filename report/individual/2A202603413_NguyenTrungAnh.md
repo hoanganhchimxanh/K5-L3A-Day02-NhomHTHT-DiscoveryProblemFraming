@@ -152,7 +152,7 @@ HIỆN TẠI — đơn xe máy vào giờ cao điểm
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
 | Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
 | Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
+| Chọn candidate problem | chấm điểm | đóng góp vào quyết định chọn candidate |
 | Kiểm chứng / research | | |
 | Quy trình nhóm | | |
 | Problem Statement | | |
@@ -180,17 +180,36 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Tôi nên xem lại mục tiêu cuối, bối cảnh lab để chọn những ideas đơn giản hơn.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Không, nhóm tôi không bị.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi có hỏi là làm idea của các bạn có đáng không công sức không và phải đổi ý sau khi được nói về phạm vi lab.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Không có gì bất ngờ.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Mô tả ý tưởng thành lời.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Đọc thật kĩ doc, hiểu cấu trúc, bối cảnh, kĩ hơn để chọn ideas.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+- problem: tổng hợp kiến thức sau buổi học chiếm quá nhiều thời gian, công sức.
+- quy trình: 1. tiếp thu từ giảng viên, 2. ghi chép tài liệu, 3. sắp xếp tài liệu, 4. đọc lại tài liệu, 5. tạo câu hỏi ôn tập.
+- metric: thời gian 4h -> 30m, kết quả tóm tắt và bộ câu hỏi, độ chính xác so với tài liệu gốc.
+- boundary: input tài liệu trong ngày
+- mức can thiệp AI: Workflow vì độ mơ hồ cao nhưng độ phức tạp thấp
+- quyết định: chưa có
 
 ---
 
