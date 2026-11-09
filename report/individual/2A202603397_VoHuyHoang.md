@@ -210,6 +210,7 @@ Quy trình nháp hiện tại:
 | CP1 Scan | Gợi ý problem 7 + 8 | Gợi ý cho tôi ý tưởng hợp lý | Một vài ý tưởng từ AI hơi mơ hồ và không khớp với thực tế bản thân tôi | Thêm problem 7 và 8 |
 | CP2 Problem Card | Vẽ quy trình khi có AI cho các problem | Gợi ý workflow hợp lý khi áp dụng AI | Một số bước không hợp lý ở thực tế | Sửa lại cho hợp lý các workflow |
 | CP5–6 Problem Statement | Tổng hợp thông tin workflow, gợi ý có nên thay đổi phần nào của problem statement không | Đưa ra gợi ý hợp lý | Câu trả lời quá dài | Rút ngắn câu trả lời cho phù hợp |
+| Kết luận | Tổng hợp thông tin và vẽ ra hướng đi tiếp theo | Đưa ra rất nhiều hướng đi | Các hướng đi có đúng và có sai | Lọc lại các hướng đi và chọn ra best 4 |
 
 ---
 
@@ -228,6 +229,7 @@ Nhóm không bị solution-first
 Tôi thay đổi một vài ràng buộc của Problem #1 - Điền file AI-Logs.md vì sau khi nhận phản biện, tôi nhận ra việc AI đôi khi sẽ ghi lịch sử chat quá dài và không focus vào nội dung chính.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**  
+Vẫn còn rất nhiều learner ưu tiên việc học truyền thống với NoAI hơn và lý do cảu họ cũng khiến tôi bất ngờ và suy ngẫm lại.
 
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**  
@@ -242,10 +244,6 @@ Problem: Sau các buổi học, việc tổng hợp lại kiến thức và bài
 Quy trình: 1. Sau buổi học, tổng hợp kiến thức trên lớp -> 2. Tìm kiếm tài liệu bên ngoài -> 3. Tổng hợp kiến thức -> 4. Ghi chép lại và nghĩ câu hỏi ôn tập -> 5. Ôn tập lại
 Boundary: Confirm kiến thức tổng hợp là chắc chắn đúng, cần HITL
 Mức can thiệp AI: Workflow
-Quyết định: Go
+Quyết định: Not Yet
 
 ---
-
-## 7. Tài liệu tham khảo
-
--

@@ -154,7 +154,7 @@ HIỆN TẠI — đơn xe máy vào giờ cao điểm
 | Chọn candidate problem | Tôi đọc và phân tích từng ý, đánh giá, chấm điểm từng candidate trong shortlist | Ảnh hưởng đến điểm trung bình chung ở mỗi tiêu chí, góp phần vào quyết định chọn candidate |
 | Kiểm chứng / research | Thống kê hóa đơn giao hàng Lalamove tuần 02–07/11/2026: số đơn/ngày, khung giờ đặt, loại xe, chi phí | Card giao hàng có bằng chứng hành vi thật (7/16 đơn sau 17h, xe van chiếm 54% chi phí); được chấm 5/5 ở "Pain có bằng chứng" |
 | Quy trình nhóm | | |
-| Problem Statement | Phản biện Boundary/HITL của v0: nếu người học phải đối chiếu toàn bộ bản tóm tắt với tài liệu gốc thì mất hết thời gian tiết kiệm được | Đề xuất đổi thành kiểm theo trích nguồn và kiểm chọn lọc, để đưa vào thay đổi của v1 |
+| Problem Statement | Phản biện Boundary/HITL của v0: nếu người học phải đối chiếu toàn bộ bản tóm tắt với tài liệu gốc thì mất hết thời gian tiết kiệm được | Đề xuất đổi thành kiểm theo trích nguồn và kiểm chọn lọc, để đưa vào thay đổi của v1. Viết Problem Statement v1 (mục 7 báo cáo nhóm): đổi Actor, Boundary, cách đo độ chính xác, thêm số liệu CP4 và 3 tiêu chí đánh giá |
 | Mức can thiệp AI | Viết mục 6 báo cáo nhóm: ma trận độ mơ hồ × độ phức tạp, so sánh 4 mức, AI Canvas, 2 câu hỏi PAIR (commit `1ac1d66`) | Nhóm chọn Workflow, giới hạn nguồn trong 4 loại tài liệu có sẵn của buổi học, không giao việc tìm tài liệu trên mạng cho AI |
 | Quyết định | | |
 
@@ -168,8 +168,8 @@ HIỆN TẠI — đơn xe máy vào giờ cao điểm
 | CP2 Problem Card | Điền card từ thông tin tôi kể và hóa đơn Lalamove tuần 02–07/11; phản biện card | Tính số liệu từ hóa đơn (số đơn/ngày, % chi phí xe van, đơn sau 17h); chỉ ra card 3 không phải việc xưởng tự giải được | Không có số phút thật cho từng bước, phải để trống cho tôi tự điền | Tự điền số phút từ quan sát tại xưởng; tự chọn top 3 theo thứ tự CP1 |
 | CP4 Research | Thống kê file CSV hóa đơn giao hàng Lalamove tuần 02–07/11/2026 | Tính nhanh số đơn/ngày, khung giờ đặt, loại xe, chi phí; chỉ ra 7/16 đơn đặt sau 17h và xe van chiếm 54% chi phí; chỉ ghi số tổng hợp, không ghi tên khách | Đoán giá xe máy cùng tuyến chênh nhau là do tiền tip, nhưng không xác nhận được; hóa đơn không có giờ tài xế nhận đơn nên không đo được thời gian chờ | Bỏ các câu hỏi không xác nhận được; tự bổ sung quan sát của mình (canh app từ lúc đặt đến lúc giao xong) |
 | CP5 Quy trình | Không dùng | — | — | — |
-| CP5–6 Problem Statement | Chuyển ý tưởng thô thành văn bản có cấu trúc (Job Story, Problem Card, các trường của Problem Statement) | Có khung rõ ràng; tách problem khỏi giải pháp (ví dụ "điều phối xe tự động" là giải pháp) | Lúc đầu tôi nhờ AI tổng hợp, tóm tắt tài liệu trước thì bị rối, vẫn phải đọc lại tài liệu gốc | Tự đọc kỹ tài liệu (phương pháp, định nghĩa, ví dụ), chỉ hỏi AI những chỗ không hiểu |
-| CP6 Mức can thiệp / quyết định | Giải thích ma trận độ mơ hồ × độ phức tạp, 4 mức No AI/Rule/Workflow/Agent, AI Canvas; soạn nháp mục 6 báo cáo nhóm | Chỉ ra ma trận có sẵn trong worksheet; giải thích Workflow khác Agent ở chỗ ai quyết bước tiếp theo; nhắc rằng có thể dùng tool có sẵn thay vì tự build | Ban đầu ghi Input "chưa chắc có slide/transcript" và xếp ô phức tạp thấp mà chưa tính đủ 4 nguồn; chép lại bước HITL "đối chiếu bản tóm tắt với tài liệu gốc" mà không thấy việc kiểm toàn bộ làm mất hết thời gian tiết kiệm | Xác nhận 4 nguồn đều có sẵn, sửa lập luận 6.1; phản biện bước kiểm tra phải theo trích nguồn và kiểm chọn lọc. Quyết định Go/Not Yet/No-Go để nhóm tự chốt |
+| CP5–6 Problem Statement | Chuyển ý tưởng thô thành văn bản có cấu trúc (Job Story, Problem Card, các trường của Problem Statement) | Có khung rõ ràng; tách problem khỏi giải pháp (ví dụ "điều phối xe tự động" là giải pháp) | Lúc đầu tôi nhờ AI tổng hợp, tóm tắt tài liệu trước thì bị rối, vẫn phải đọc lại tài liệu gốc | Tự đọc kỹ tài liệu (phương pháp, định nghĩa, ví dụ), chỉ hỏi AI những chỗ không hiểu. Với Problem Statement v1: AI chỉ hỏi từng trường, đưa sẵn v0 và số liệu CP4, chỉ ra chỗ mâu thuẫn (ví dụ bước 3 đề xuất tài liệu lệch với mục 6.1, tiêu chí 30–45 phút lệch với metric dưới 30 phút); tôi tự trả lời từng trường, AI chép nguyên vào |
+| CP6 Mức can thiệp / quyết định | Giải thích ma trận độ mơ hồ × độ phức tạp, 4 mức No AI/Rule/Workflow/Agent, AI Canvas; soạn nháp mục 6 báo cáo nhóm; sau khi có CP4 của Tuyên, cập nhật mục 6 theo kết quả phỏng vấn và research | Chỉ ra ma trận có sẵn trong worksheet; giải thích Workflow khác Agent ở chỗ ai quyết bước tiếp theo; nhắc rằng có thể dùng tool có sẵn thay vì tự build | Ban đầu ghi Input "chưa chắc có slide/transcript" và xếp ô phức tạp thấp mà chưa tính đủ 4 nguồn; chép lại bước HITL "đối chiếu bản tóm tắt với tài liệu gốc" mà không thấy việc kiểm toàn bộ làm mất hết thời gian tiết kiệm | Xác nhận 4 nguồn đều có sẵn, sửa lập luận 6.1; phản biện bước kiểm tra phải theo trích nguồn và kiểm chọn lọc. Quyết định Go/Not Yet/No-Go để nhóm tự chốt |
 
 ---
 
@@ -208,7 +208,7 @@ Mô tả ý tưởng, câu chuyện thành câu chữ, các bước rõ ràng. V
 - metric: thời gian 4h -> 30m, kết quả tóm tắt và bộ câu hỏi, độ chính xác so với tài liệu gốc. 
 - boundary: phải tự tay input tài liệu trong ngày vì ai đâu thể nào biết mình có bao nhiêu tài liệu cần.
 - mức can thiệp AI: Workflow vì độ mơ hồ cao nhưng độ phức tạp thấp
-- quyết định: chưa có
+- quyết định: Not Yet vì không biết người ta có thực sự cần không, cần nghiên cứu thêm
 
 ---
 

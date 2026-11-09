@@ -196,7 +196,6 @@ HIỆN TẠI — 6 bước, ~240' chuẩn bị ôn tập mỗi buổi
 
 ```
 
-```markdown
 ```mermaid
 flowchart LR
     S1["1 Học, tiếp nhận kiến thức<br/>trong buổi"]
@@ -215,7 +214,6 @@ flowchart LR
     class S3,S4,S5 bottleneck
     class S2 normal
     class S1,S6 outside
-```
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
@@ -257,7 +255,6 @@ PHƯƠNG ÁN QUAY VỀ:
 
 ```
 
-```markdown
 ```mermaid
 flowchart LR
     A1["A1 Học + ghi chú trong buổi<br/>CON NGƯỜI, không đổi"]
@@ -289,7 +286,6 @@ flowchart LR
     class A3,A4 ai
     class BD note
     class FB fallback
-```
 ```
 
 ### 4.3. Before / after
@@ -338,9 +334,9 @@ Vì sao:
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | Template ghi chú Markdown cố định sau mỗi buổi; mỗi thành viên tóm tắt 1 phần rồi chia sẻ cho nhóm; tự làm flashcard | Tài liệu ít; nhóm đều đặn chia việc và làm đúng hạn | Vẫn tốn nhiều thời gian (baseline ~4 giờ); chất lượng không đều giữa các người | Không, đây là cách đang làm |
+| **No AI** (sửa quy trình) | Template ghi chú Markdown cố định sau mỗi buổi; mỗi thành viên tóm tắt 1 phần rồi chia sẻ cho nhóm; tự làm flashcard | Tài liệu ít; nhóm đều đặn chia việc và làm đúng hạn; người học thích tự viết để nhớ (1/3 người phỏng vấn ở CP4) | Vẫn tốn nhiều thời gian (baseline ~4 giờ); chất lượng không đều giữa các người | Không làm mặc định; giữ template ghi chú (Cornell Notes) cho người thích tự viết |
 | **Rule** | Script gom 4 nguồn của buổi học (tài liệu `docs/*.md`, slide, transcript, ghi chú) vào 1 chỗ; trích heading thành checklist ôn tập; biến bảng "Thuật ngữ" có sẵn thành flashcard | Tài liệu có cấu trúc rõ (heading, bảng thuật ngữ) | Chỉ nhặt được chữ có sẵn; không tóm được ý; không tạo được câu hỏi kiểm tra hiểu | Một phần: dùng cho bước gom tài liệu |
-| **Workflow** | (1) Script gom 4 nguồn của buổi học → (2) AI tóm tắt theo template cố định, mỗi ý ghi nguồn → (3) AI tạo ~10 câu hỏi kèm đáp án có trích nguồn → (4) người học xem lại, gạch câu sai → (5) người học tự làm quiz | Nguồn là 4 loại tài liệu có sẵn của buổi học và đưa được hết cho AI | AI bịa nội dung; tóm tắt hời hợt; người học chỉ đọc tóm tắt thay vì tự học | **Chọn** |
+| **Workflow** | (1) Script gom 4 nguồn của buổi học (dạng chữ) → (2) AI trích 5–7 khái niệm cốt lõi theo template cố định, mỗi ý ghi nguồn → (3) AI tạo 5–10 câu quiz/flashcard kèm đáp án, trích trang slide hoặc mục tài liệu → (4) người học xem lại, gạch câu sai → (5) người học tự làm quiz | Nguồn là 4 loại tài liệu có sẵn của buổi học và đưa được hết cho AI | AI bịa nội dung; tóm tắt hời hợt | **Chọn** |
 | **Agent** | AI tự tìm thêm tài liệu trên mạng, tự đoán người học yếu phần nào, tự lặp tạo bài ôn đến khi "đủ" | Cần cá nhân hóa sâu và có dữ liệu kết quả học của từng người | Nguồn không kiểm soát được; khó chấm đầu ra; chi phí cao; quá sức với khóa học chỉ còn vài tuần | Không |
 
 **Mức chọn:** Workflow (bước gom tài liệu dùng Rule; bước tóm tắt và tạo câu hỏi dùng AI; bước kiểm tra và tự làm quiz do người học).
@@ -349,13 +345,18 @@ Vì sao:
 - **Rule** chỉ trích được chữ có sẵn trong tài liệu. Nó không tạo được bản tóm tắt ý chính hay câu hỏi kiểm tra hiểu, mà đây chính là bước nghẽn của quy trình hiện tại (đọc, tổng hợp, tự đặt câu hỏi).
 - **No AI** là cách đang làm, mất khoảng 4 giờ mỗi buổi.
 - **Không chọn Agent** vì các bước đã biết trước và cố định, không cần AI tự quyết bước tiếp theo. Agent chỉ thêm rủi ro về nguồn và chi phí.
-- **Ghi chú:** Workflow này có thể **không cần tự build**. Chỉ cần một prompt template cố định dùng với công cụ AI có sẵn. *(Chờ kết quả research CP4 để xác nhận công cụ có sẵn đáp ứng được bao nhiêu.)*
+- **Không cần tự build:** research CP4 (mục 3.3) cho thấy công cụ có sẵn đã làm được từng phần:
+  - NotebookLM tóm tắt bám tài liệu và có trích số trang, nhưng không có quiz ôn lặp lại.
+  - Quizlet tạo được flashcard và quiz, nhưng bản miễn phí bị giới hạn lượt và hay nhầm với nội dung kỹ thuật.
+  - Otter.ai chỉ làm transcript, không tạo câu hỏi.
+
+  Vì vậy Workflow của nhóm là ghép các bước này bằng một prompt template cố định, không tự xây mô hình. Bắt đầu từ tài liệu dạng chữ (slide PDF, transcript đã xuất), không xử lý file âm thanh thô.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | Bản tóm tắt buổi học theo template cố định và ~10 câu hỏi ôn tập kèm đáp án; mỗi ý, mỗi đáp án có trích nguồn (tên file + mục) |
+| **Prediction** — AI dự đoán / tạo ra gì? | 5–7 khái niệm cốt lõi của buổi học và 5–10 câu quiz/flashcard kèm đáp án; mỗi ý, mỗi đáp án có trích nguồn (số trang slide hoặc tên file + mục). Không làm bản tóm tắt dài, vì CP4 cho thấy người học cần câu hỏi tự kiểm tra hơn là văn bản tóm tắt |
 | **Judgment** — con người cân nhắc, quyết định gì? | Người học quyết định câu nào sai hoặc thừa, phần nào phải đọc lại tài liệu gốc |
 | **Action** — hành động cuối cùng là gì, ai làm? | Người học tự trả lời quiz và ôn lại phần trả lời sai. AI không trả lời thay, không chấm người học |
 | **Outcome** — đo kết quả bằng gì? | Thời gian chuẩn bị ôn tập (~4 giờ → dưới 30 phút); % ý có trích nguồn đúng; số câu người học phải gạch mỗi buổi |
@@ -364,10 +365,14 @@ Vì sao:
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: *(chờ kết quả phỏng vấn CP4)*.
-  Giả thuyết của nhóm là **augment**: AI làm phần nặng (gom, tóm tắt, tạo câu hỏi), còn người học vẫn tự trả lời câu hỏi, vì đó là lúc học thật. Nếu AI làm hết và người học chỉ đọc bản tóm tắt thì có thể nhanh hơn nhưng nhớ kém hơn.
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? → **Augment.** Bằng chứng từ CP4 (mục 3.2, 3 người phỏng vấn + poll 8 người):
+  - 7/8 người trong poll muốn có quiz để tự kiểm tra sau buổi học.
+  - Một người nói chỉ cần 5–10 câu trắc nghiệm để biết mình hổng chỗ nào, không cần bài tóm tắt dài.
+  - Một người thích tự viết flashcard vì tự viết mới nhớ, đọc tóm tắt của AI xong là quên.
+
+  Người học muốn AI làm phần nặng (gom, lọc ý, soạn câu hỏi), còn tự trả lời câu hỏi vẫn là việc của họ, vì đó là lúc học thật. Nếu AI làm hết và người học chỉ đọc bản tóm tắt thì nhanh hơn nhưng nhớ kém hơn.
 - AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
-  **Nội dung sai hoặc bịa tệ hơn bỏ sót.** Người học sẽ tin và học sai. Còn nếu AI bỏ sót một khái niệm, tài liệu gốc vẫn còn để đọc. Thiết kế xử lý như sau:
+  **Nội dung sai hoặc bịa tệ hơn bỏ sót.** Người học sẽ tin và học sai. Còn nếu AI bỏ sót một khái niệm, tài liệu gốc vẫn còn để đọc. CP4 xác nhận điều này: một người phỏng vấn từng nhờ ChatGPT tóm tắt slide và bị giải thích sai ký hiệu toán so với quy ước của thầy, nên không dám tin bản tóm tắt nếu không chỉ rõ trang slide. Thiết kế xử lý như sau:
   - mọi ý tóm tắt và đáp án đều bắt buộc trích nguồn;
   - ý nào không có trong tài liệu thì đánh dấu "ngoài tài liệu";
   - người học kiểm tra trước khi dùng hoặc chia sẻ cho nhóm.
@@ -378,29 +383,34 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Mọi học viên lớp AI thực chiến ở lớp khác cùng khóa |
+| **Quy trình** | 1. Tham gia buổi học và tiếp nhận kiến thức từ giảng viên. 2. Ghi chú hoặc lưu lại các tài liệu được cung cấp. 3. Sau buổi học, tìm kiếm thêm tài liệu để hiểu rõ những nội dung chưa nắm vững. 4. Đọc lại tài liệu và tổng hợp các kiến thức quan trọng. 5. Tự tạo câu hỏi hoặc bài tập để kiểm tra mức độ hiểu bài. 6. Ôn tập lại kiến thức vào cuối tuần. |
+| **Bottleneck** | Bước 3–5: Phải tự tìm kiếm, đọc và tổng hợp thông tin từ nhiều nguồn, sau đó tự xây dựng nội dung ôn tập. Kết quả CP4: 3/3 người được phỏng vấn ngại đọc lại slide dài và dồn tới sát kỳ thi mới ôn; người học cần câu hỏi tự kiểm tra hơn là bản tóm tắt. |
+| **Impact** | Tốn nhiều thời gian cho việc tìm kiếm và tổng hợp thay vì tập trung vào thực hành. Kiến thức có thể bị quên nếu không được ôn tập thường xuyên. Người học cũng có thể bỏ sót những nội dung quan trọng hoặc không biết mình đang yếu ở phần kiến thức nào. Số liệu CP4: 6/8 người trong poll mất trên 2 tiếng/tuần nếu tự tổng hợp tài liệu; 1 người mất 4–5 tiếng trước mỗi kỳ thi (ngày thường 0 phút); 1 người mất 60–90 phút/bài nếu chăm làm và thường bỏ cuộc sau 2–3 tuần. |
+| **Success Metric** (baseline → target, cách đo) | Thời gian tổng hợp và chuẩn bị tài liệu ôn tập: 4 giờ → dưới 30 phút. Tự động tạo bản tóm tắt kiến thức và bộ câu hỏi sau mỗi buổi học. Nội dung được tạo phải bám sát tài liệu gốc, hướng tới độ chính xác trên 90%, đo bằng cách đọc lướt để confirm bản tóm tắt. |
+| **Boundary** | **AI không được:** 1. Thêm kiến thức ngoài tài liệu. 2. Tạo thông tin, công thức, ví dụ hoặc đáp án không có căn cứ. **Con người kiểm tra:** AI có một bản mục lục để người dùng tự đọc lướt confirm. |
+| **AI intervention point** | Bước 4 (đọc lại, tổng hợp kiến thức) và bước 5 (tạo câu hỏi). Bước 3 (tìm thêm tài liệu) không giao cho AI. |
+| **Mức chọn** | Workflow |
+| **Rủi ro & người kiểm tra** | **Rủi ro:** AI bịa nội dung, tóm tắt hời hợt; lúc đọc thấy chỗ cấn thì người học sẽ tự biết. Đây là bản tổng hợp nên người học đọc tóm tắt là đúng. **Người kiểm tra:** chính người học. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Actor | Learner | Mọi học viên lớp AI thực chiến ở lớp khác cùng khóa | Vì nó được thiết kế cụ thể cho bài học của khóa, lớn hơn không thể kiểm soát được data đầu vào |
+| Bottleneck | Bước 3–5, chưa có bằng chứng | Giữ bước 3–5, thêm phát hiện CP4 | Thêm số liệu từ phỏng vấn và poll CP4 |
+| Impact | Chưa có số | Thêm số liệu CP4 | Thêm số liệu từ phỏng vấn và poll CP4 |
+| Success Metric | Độ chính xác đo qua kiểm tra thủ công | Độ chính xác đo bằng đọc lướt để confirm bản tóm tắt | Tự bấm giờ và cảm nhận, độ chính xác thì đọc lướt |
+| Boundary | AI không thêm kiến thức ngoài mà không đánh dấu; người học đối chiếu bản tóm tắt với tài liệu gốc | AI không được thêm kiến thức ngoài tài liệu; AI có bản mục lục để người dùng đọc lướt confirm | Nếu người học phải đối chiếu toàn bộ bản tóm tắt với tài liệu gốc thì mất hết thời gian tiết kiệm được |
+| AI intervention point, Mức chọn, Rủi ro & người kiểm tra | Chưa có | Bước 4–5; Workflow; người học tự kiểm tra | Mẫu v1 yêu cầu thêm; lấy từ mục 6 |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Mục lục đầy đủ | Mục lục liệt kê đầy đủ các mục lớn quan trọng (người học tự cảm nhận) | Cần thêm hoặc sửa |
+| 2 | Thời gian | Tự bấm giờ dưới 30 phút | Từ 30 phút trở lên |
+| 3 | Đủ số câu hỏi | Đủ 5–10 câu hỏi | Ít hơn 5 câu hỏi |
 
 ---
 
@@ -410,31 +420,46 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | Có tín hiệu nhu cầu ban đầu: 3/3 người được phỏng vấn gặp khó khăn khi đọc lại slide dài; 2/3 muốn có quiz/flashcard; 7/8 người trong micro poll muốn có quiz sau buổi học. Tuy nhiên, nhu cầu giữa các cá nhân chưa đồng nhất: có người thích tự viết flashcard để ghi nhớ và 2/8 người chỉ cần xem lại code thực hành trên GitHub. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | TB | Người được phỏng vấn có thể hiểu quy trình sử dụng ở mức ý tưởng, nhưng nhóm chưa thử nghiệm prototype để xác nhận thao tác thực tế, mức độ dễ sử dụng và công sức cần bỏ ra để kiểm tra đầu ra. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | TB | Xác định được 4 nguồn đầu vào gồm tài liệu Markdown, slide, transcript và ghi chú cá nhân. Có thể sử dụng công cụ AI hiện có để tóm tắt và tạo câu hỏi theo prompt template. Tuy nhiên, transcript dài có thể cần chia nhỏ; AI có nguy cơ diễn giải sai thuật ngữ, công thức, bỏ sót kiến thức quan trọng hoặc tạo nội dung không có trong tài liệu. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | TB | Nếu sử dụng công cụ AI có sẵn và prompt template cố định, chi phí triển khai ban đầu có thể thấp. Tuy nhiên, chi phí token phụ thuộc vào độ dài và độ phức tạp của tài liệu, đặc biệt với transcript dài. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Not Yet
 
-**Lý do:**
+**Lý do:**  
+Nhóm chọn Not Yet vì đã xác định được vấn đề người học gặp phải, nhưng chưa đủ bằng chứng để xác nhận Workflow AI là phương án phù hợp nhất. Chưa kiểm chứng được mức độ sẵn sàng sử dụng, chất lượng đầu ra AI và lợi ích thực tế so với phương án tự ghi chú hoặc sử dụng công cụ hiện có.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Cần kiểm chứng:**  
+- Thử nghiệm giải pháp với một số sinh viên qua nhiều buổi học thực tế để xác định họ có tiếp tục sử dụng sau lần trải nghiệm đầu tiên hay không.
+- Đo thời gian thực tế trước và sau khi sử dụng, kiểm tra mục tiêu giảm từ khoảng 240 phút xuống dưới 30 phút có khả thi không.
+- Đánh giá độ chính xác của bản tóm tắt, câu hỏi, đáp án và trích dẫn nguồn thông qua đối chiếu thủ công với tài liệu gốc.
+- Đo chi phí token trung bình cho mỗi buổi học với các loại tài liệu có độ dài và độ phức tạp khác nhau.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng**:  
+Nếu sau 3 buổi học thử nghiệm, giải pháp không giúp giảm thời gian chuẩn bị ôn tập xuống dưới 30 phút, độ chính xác nội dung không đạt 90%, hoặc người học không tiếp tục sử dụng vì không thấy giá trị rõ ràng, nhóm sẽ dừng phát triển Workflow AI và quay về phương án No AI: sử dụng template Markdown/Cornell Notes kết hợp script Rule để trích xuất heading và thuật ngữ từ tài liệu.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- **Hạn chế về kiểm chứng người dùng:** Số lượng người được phỏng vấn còn ít (3 người phỏng vấn sâu và 8 người tham gia micro poll), chưa đủ đại diện cho nhiều nhóm sinh viên và lĩnh vực học tập khác nhau. Nhu cầu sử dụng AI để ôn tập cũng chưa thống nhất giữa các đối tượng.
 
-## 10. Tài liệu tham khảo
+- **Hạn chế về độ chính xác của AI:** AI có thể tóm tắt thiếu ý quan trọng, diễn giải sai thuật ngữ hoặc tạo câu hỏi và đáp án không chính xác. Đặc biệt, các tài liệu chuyên môn có công thức, code hoặc nội dung kỹ thuật phức tạp có thể làm tăng nguy cơ hallucination.
 
--
+- **Hạn chế về dữ liệu đầu vào:** Chất lượng đầu ra phụ thuộc vào cấu trúc và chất lượng của slide, transcript, ghi chú cá nhân và tài liệu bài học. Transcript dài có thể phải chia nhỏ, dẫn đến nguy cơ mất ngữ cảnh khi xử lý.
+
+**Hướng tiếp theo:**
+
+1. **Tiếp tục kiểm chứng nhu cầu:** Mở rộng phỏng vấn và thử nghiệm với nhiều sinh viên thuộc các ngành học khác nhau để xác định nhu cầu thực tế và tần suất sử dụng giải pháp.
+
+2. **Đánh giá chất lượng đầu ra:** Đối chiếu bản tóm tắt, câu hỏi và đáp án do AI tạo với tài liệu gốc; đo tỷ lệ chính xác, tỷ lệ trích dẫn đúng và số lượng nội dung bị bỏ sót hoặc tạo sai.
+
+3. **Cải thiện prompt và cơ chế kiểm soát:** Bổ sung quy tắc yêu cầu AI chỉ sử dụng thông tin từ tài liệu nguồn, bắt buộc trích dẫn vị trí tham chiếu và đánh dấu rõ những nội dung không tìm thấy trong nguồn.
+
+4. **So sánh với phương án không sử dụng AI:** Đánh giá Workflow AI với template Cornell Notes và script Rule để xác định mức độ cải thiện về thời gian, chất lượng tài liệu và trải nghiệm người học.
+
+Sau khi có kết quả thử nghiệm, nhóm sẽ đánh giá lại bốn yếu tố Value, Usability, Feasibility và Viability để đưa ra quyết định Go hoặc No-Go cho giai đoạn phát triển tiếp theo.
+
