@@ -95,16 +95,21 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- Phụ trách chính khâu Kiểm chứng thực tế (CP4), phối hợp thực hiện khâu Research thị trường (CP4) và tham gia xây dựng Quy trình tương lai (CP5).
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Soạn thảo câu hỏi và trực tiếp phỏng vấn sâu 3 sinh viên theo phương pháp The Mom Test, thực hiện micro poll 8 bạn trong lớp; phát hiện tín hiệu phản bác quan trọng giúp nhóm thu hẹp bài toán từ tóm tắt sang sinh quiz có trích dẫn nguồn.
+- Nghiên cứu và đối chuẩn 3 sản phẩm trên thị trường (Google NotebookLM, Quizlet Magic Notes, Otter.ai) với link kiểm chứng; rút ra bài học về kiến trúc Workflow và cơ chế Grounding từ file slide PDF.
+- Phản biện lựa chọn mức can thiệp AI, kiên quyết bảo vệ phương án Workflow thay vì Agent; đề xuất ngưỡng dừng đo lường được cho giai đoạn pilot tại CP6.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- `group_report.md`: Mục 3.1 (Assumption Map), Mục 3.2 (3 Interview Snapshots & Bảng tổng hợp), Mục 3.3 (Bảng research 3 sản phẩm kèm link), Mục 2.4 (Đóng góp phản biện shortlist).
+- `report/individual/2A202603511_DuongNgocTuyen.md`: Toàn bộ các mục 1–7.
+- Commits trên branch cá nhân và repo nhóm: commit thêm câu hỏi phản biện, hoàn thiện CP4 và cập nhật báo cáo.
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Nhận ra giá trị cốt lõi của việc "Problem-first, not AI-first": nếu không phỏng vấn người thật, nhóm sẽ dễ dàng xây dựng một tính năng tóm tắt slide cồng kềnh mà không ai thực sự cần dùng.
+- Hiểu sâu sắc cách phân định ranh giới giữa Rule, Workflow và Agent; thấy được tầm quan trọng của việc luôn giữ con người trong vòng lặp (Human-in-the-loop) để kiểm soát rủi ro cho các hệ thống AI.

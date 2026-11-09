@@ -158,10 +158,10 @@ HIỆN TẠI — 40 phút mỗi lần ôn bài
 | Gom cluster / cây OST | Đề xuất gom Card #1 của tôi và Card #1 của Huy Hoàng vào cụm "Kiểm tra chất lượng & quy cách bài lab"; cùng nhóm xây dựng 3 nhánh Opportunity cho cây OST tập trung vào pain của sinh viên trước giờ nộp bài. | Cây OST của nhóm tách bạch rõ ràng giữa Outcome, Opportunity và loại bỏ hoàn toàn các giải pháp trá hình. |
 | Chọn candidate problem | Cùng nhóm chấm điểm bảng shortlist 5 candidate trên 7 tiêu chí; cân nhắc giữa bài kiểm tra lab và bài tổng hợp tài liệu học tập. | Cả nhóm thống nhất chọn candidate điểm cao nhất (32 điểm): *"Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học"* vì tần suất lặp lại rộng hơn và có impact xuyên suốt kỳ học. |
 | Kiểm chứng / research | Trực tiếp phụ trách phỏng vấn sâu 3 sinh viên theo phương pháp The Mom Test (hỏi hành vi ôn tập trong quá khứ) và làm poll 8 bạn trong lớp; cùng nhóm research 3 công cụ tương tự (NotebookLM, Quizlet, Otter.ai). | Thu được tín hiệu phản bác quan trọng: sinh viên không tin tóm tắt nếu không có trích dẫn nguồn (citation) trang slide. Giúp nhóm thu hẹp problem thành sinh quiz trắc nghiệm kèm dẫn nguồn trực tiếp. |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Quy trình nhóm | Đóng góp xây dựng sơ đồ quy trình Before/After cùng Hoàng Anh; đề xuất bổ sung bước kiểm soát con người (Human-in-the-loop) ở khâu review câu hỏi quiz trước khi lưu vào kho ôn tập; thiết lập phương án quay về (fallback sang template Cornell Notes truyền thống nếu AI lỗi). | Quy trình tương lai của nhóm có ranh giới rõ ràng giữa Rule (tách text slide) và AI (sinh quiz); đảm bảo an toàn và người học không bị phụ thuộc thụ động. |
+| Problem Statement | Cùng Huy Hoàng rà soát và hoàn thiện 6 trường của Problem Statement v0 và v1; kiên quyết đưa yêu cầu Citation (trích dẫn số trang slide gốc) vào trường Boundary; chuẩn hóa Success Metric có baseline và target đo lường cụ thể. | Bản Problem Statement v1 của nhóm chặt chẽ, đo được cả tốc độ và chất lượng, không bị mơ hồ. |
+| Mức can thiệp AI | Phân tích bài toán trên ma trận độ mơ hồ × độ phức tạp; phản biện đề xuất dùng Agent của một số thành viên ban đầu, lập luận chỉ cần Workflow vì các bước xử lý tài liệu là tuần tự, không cần AI tự quyết. | Nhóm đồng thuận chọn mức can thiệp Workflow đơn giản nhất đủ dùng, giảm thiểu tối đa rủi ro kỹ thuật và chi phí. |
+| Quyết định | Tham gia đánh giá 4 rủi ro sản phẩm (Value, Usability, Feasibility, Viability); đề xuất ngưỡng dừng đo được cho giai đoạn pilot (nếu tỷ lệ câu hỏi sai > 15% hoặc sinh viên dùng thử < 60% thì dừng dự án). | Nhóm thống nhất ra quyết định "Go ở phạm vi nhỏ" với kế hoạch pilot 2 tuần và điều kiện dừng rõ ràng. |
 
 ---
 
@@ -172,9 +172,9 @@ HIỆN TẠI — 40 phút mỗi lần ôn bài
 | CP1 Scan | Gợi ý thêm các góc nhìn từ lăng kính 'Pain từ người khác' sau khi đã tự scan 8 ý. | Mở rộng góc nhìn sang các đối tượng xung quanh như nhóm trưởng duyệt bài và TA giải đáp thắc mắc. | AI gợi ý một số ý quá rộng, mơ hồ như 'Trợ lý AI quản lý lịch học tập theo cảm xúc'. | Lọc bỏ các ý viển vông; chỉ giữ lại 2 ý có pain thật và tự viết lại theo số liệu đo đạc thực tế của lớp/nhóm. |
 | CP2 Problem Card | Đóng vai Product Manager hoài nghi để phản biện và tìm lỗ hổng trong Problem Card #1. | Chỉ ra điểm yếu: baseline thời gian chưa được đo đạc chặt chẽ, metric '0% lỗi' quá tuyệt đối, và cảnh báo nguy cơ lạm dụng AI khi Rule đã đủ. | AI có xu hướng gợi ý thêm các tính năng phức tạp (Agent tự sửa bài và tự nộp). | Bác bỏ tính năng tự động nộp của AI; giữ vững boundary là Rule chỉ kiểm tra quy cách, con người tự duyệt và tự commit. |
 | CP4 Research | Gợi ý các case study / sản phẩm đã giải quyết bài toán tóm tắt bài giảng và tạo quiz ôn tập. | Nhanh chóng đưa ra danh sách các công cụ edtech nổi bật trên thị trường (NotebookLM, Quizlet, Otter). | AI đưa ra một số link bị lỗi 404 hoặc mô tả tính năng chung chung cho cả ChatGPT/Notion. | Tự tay mở kiểm chứng từng link thật (quizlet.com/features/magic-notes, notebooklm.google.com); phân tích sâu vào ranh giới giải quyết từng bước trong quy trình học tập. |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP5 Quy trình | Chuyển đổi mô tả luồng quy trình làm việc dạng văn bản sang cú pháp sơ đồ Mermaid. | Tạo nhanh khung sơ đồ Before/After có phân cấp rõ ràng giữa các bước. | AI tự ý vẽ thêm một nhánh tự động gửi báo cáo học tập cho giảng viên (không sát với nhu cầu tự ôn tập của sinh viên). | Xóa bỏ nhánh gửi giảng viên; điều chỉnh lại trọng tâm luồng sinh quiz và bước người học tự kiểm tra đáp án. |
+| CP5–6 Problem Statement | Đóng vai giảng viên khó tính để chỉ ra lỗ hổng trong bản Problem Statement v0. | Phát hiện ra metric ban đầu chỉ đo tốc độ ("nhanh hơn 3 tiếng"), chưa có metric đo chất lượng câu hỏi ôn tập. | AI tự tiện viết lại bản Problem Statement mới chứa đầy buzzword sáo rỗng ("nền tảng học tập thích ứng AI cá nhân hóa"). | Bác bỏ văn phong sáo rỗng của AI; giữ lại nhận xét về lỗ hổng metric và bổ sung tiêu chí độ chính xác trích dẫn $\ge 90\%$ vào bản v1. |
+| CP6 Mức can thiệp / quyết định | So sánh các rủi ro kỹ thuật giữa kiến trúc Workflow và Agent trong xử lý tài liệu học thuật. | Liệt kê chi tiết nguy cơ vòng lặp vô tận và chi phí token của Agent khi duyệt tài liệu lớn. | AI có xu hướng khuyến khích chọn Agent vì "công nghệ tiên tiến và tạo ấn tượng tốt hơn". | Bác bỏ đề xuất làm Agent; kiên quyết chọn Workflow theo đúng nguyên tắc "đơn giản nhất đủ dùng", ưu tiên độ tin cậy và kiểm soát lỗi. |
 
 ---
 
@@ -184,21 +184,43 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Lắng nghe bài pitch của các bạn trong nhóm HTHT giúp tôi nhận ra cùng là môi trường sinh viên nhưng góc nhìn và trải nghiệm rất phong phú. Đề tài quản lý xưởng sản xuất của Trung Anh nhắc nhở tôi rằng ngoài đời có những bài toán vô cùng phức tạp, phụ thuộc vào con người và hệ thống bên ngoài mà ta không thể giải quyết đơn thuần bằng một công cụ phần mềm. Trong khi đó, các đề tài của Hoàng Anh về phân chia task hay kiểm tra commit giúp tôi nhìn thấy ranh giới mong manh giữa một "vấn đề về công cụ" và một "vấn đề về ý thức kỷ luật cá nhân" — điều mà công nghệ không thể tự động hóa thay thế được.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm tôi đã bị "solution-first" ít nhất hai lần: lần đầu khi Hoàng Anh đề xuất làm một con bot AI tự động quét GitHub và gửi tin nhắn giục commit, và lần thứ hai khi Huy Hoàng ban đầu muốn xây một "hệ thống gia sư AI thông minh toàn diện". Nhóm nhận ra điều này khi bắt tay vào vẽ quy trình hiện tại và tôi đặt câu hỏi phản biện: "Nếu không có AI, cách đơn giản nhất để giải bài này là gì?". Nhờ câu hỏi đó, cả nhóm nhận ra bot nhắc việc chỉ cần một webhook miễn phí 5 phút cài đặt là xong, và việc nhảy ngay vào xây dựng hệ thống AI cồng kềnh là do đang bị cuốn hút bởi công nghệ hơn là nhìn vào bản chất nút thắt thực tế.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi đã đổi ý hoàn toàn ở bước chọn candidate problem tại CP3. Ban đầu, tôi rất quyết liệt bảo vệ Card #1 của mình (Kiểm tra quy cách và rubric bài lab) vì thấy nó giải quyết ngay nỗi đau cấp bách của buổi học hôm nay. Tuy nhiên, khi Hoàng Anh và Huy Hoàng phản biện rằng việc kiểm tra tên file hay cấu trúc thư mục hoàn toàn có thể viết một shell script regex trong 20 dòng là giải quyết xong 80%, và đề tài tổng hợp tài liệu ôn tập của Hoàng có tần suất lặp lại ở mọi môn học trong cả kỳ với impact sâu hơn nhiều, tôi đã bị thuyết phục. Tôi nhận ra bài toán của Hoàng mới thực sự là nơi AI phát huy đúng giá trị đọc hiểu ngữ nghĩa, và tôi đã vui vẻ chuyển hướng đồng thuận cùng nhóm.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều làm tôi bất ngờ nhất khi phỏng vấn bạn học theo The Mom Test là: sinh viên không hề cần và cũng không muốn đọc một bài văn tóm tắt dài dòng. Trước đó, cả nhóm tôi đều mặc định AI tóm tắt 40 trang slide thành một tài liệu 3 trang tóm lược là đã rất giá trị. Nhưng bạn sinh viên được phỏng vấn thứ ba đã thẳng thắn chia sẻ rằng tóm tắt bằng chữ dài thì bạn cũng sẽ lười đọc tiếp, cái bạn thực sự cần chỉ là 5–10 câu hỏi trắc nghiệm kiểm tra nhanh (active recall) để biết mình đang hổng kiến thức ở đâu. Phát hiện này đã làm nhóm thay đổi hoàn toàn đầu ra của giải pháp từ "Summary Notes" sang "Active Recall Quiz".
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó nhất đối với tôi là viết trường Boundary và Success Metric. Viết một câu chung chung như "giúp sinh viên học tốt hơn và tiết kiệm thời gian" thì rất dễ, nhưng để viết ra được con số cụ thể (giảm từ bao nhiêu phút xuống bao nhiêu phút, tỉ lệ câu hỏi chính xác $\ge 90\%$) và quy định ranh giới nghiêm ngặt (AI không được tự ý bịa kiến thức ngoài slide, bắt buộc phải trích dẫn số trang slide gốc) đòi hỏi phải tư duy rất sâu về các tình huống lỗi. Việc này ép người làm phải chịu trách nhiệm về sản phẩm của mình thay vì chỉ mơ mộng về tính năng.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu được làm lại từ đầu buổi lab, tôi sẽ phản biện nhóm dứt khoát hơn ngay từ khâu gom cluster để không mất quá nhiều thời gian tranh luận về đề tài vận tải xưởng sản xuất của Trung Anh — một đề tài dù rất hay nhưng hoàn toàn bất khả thi để phỏng vấn và kiểm chứng ngay tại lớp học trong 4 tiếng. Ngoài ra, ở khâu research, tôi sẽ đề xuất nhóm thử nghiệm thực tế ngay với một file slide PDF thật trên Google NotebookLM để có số liệu đối chuẩn chính xác xem AI mất bao nhiêu giây sinh câu hỏi và tỉ lệ trích dẫn sai là bao nhiêu phần trăm.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán của nhóm xuất phát từ nỗi đau sinh viên mất 3–4 tiếng sau mỗi buổi học để đọc lại slide dài 40–50 trang và ngại tự soạn câu hỏi ôn tập, dẫn đến việc bỏ quên kiến thức hoặc dồn ứ trước kỳ thi (**Problem**). Nhóm thiết kế lại quy trình thành 5 bước tuần tự: tải slide PDF/note lên $\rightarrow$ Rule trích xuất text $\rightarrow$ AI lọc khái niệm cốt lõi và sinh bộ câu hỏi trắc nghiệm kèm trích dẫn nguồn $\rightarrow$ Sinh viên làm bài kiểm tra phản xạ $\rightarrow$ Sinh viên tự review câu hỏi và lưu vào kho ôn tập (**Quy trình**). Thành công được đo lường cụ thể bằng việc giảm thời gian chuẩn bị tài liệu từ 4 tiếng xuống dưới 45 phút, độ chính xác của câu hỏi bám sát slide đạt $\ge 90\%$, và nâng tỷ lệ sinh viên tự ôn tập trong 48h sau buổi học từ 15% lên 70% (**Metric**). Ranh giới an toàn được xác lập nghiêm ngặt: AI tuyệt đối không tự bổ sung kiến thức ngoài tài liệu bài giảng, mọi câu hỏi bắt buộc phải trỏ đúng số trang slide gốc (citation), và con người luôn là người kiểm duyệt cuối cùng (**Boundary**). Mức can thiệp được lựa chọn là **Workflow** bán tự động vì các bước xử lý dữ liệu là tuyến tính, định sẵn, chỉ cần AI hỗ trợ phần ngôn ngữ mà không cần cấp quyền tự quyết rủi ro cho Agent (**Mức can thiệp AI**). Cuối cùng, nhóm đưa ra quyết định **Go ở phạm vi nhỏ** (pilot thử nghiệm trên 3 môn học trong 2 tuần), kèm ngưỡng dừng đo lường được: nếu tỷ lệ sinh viên đánh giá câu hỏi hữu ích dưới 70% hoặc AI sinh sai kiến thức quá 15% thì lập tức dừng dự án để quay về phương án ghi chép truyền thống (**Quyết định**).
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+1. **Design Council (UK):** The 'Double Diamond' design process model (Discover, Define, Develop, Deliver).
+2. **Rob Fitzpatrick (2013):** *The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you*.
+3. **Teresa Torres (2021):** *Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value* (Opportunity Solution Tree framework).
+4. **Jeff Gothelf & Josh Seiden (2021):** *Lean UX: Designing Great Products with Agile Teams* (3rd Edition).
+5. **Google PAIR (People + AI Research):** *People + AI Guidebook* — Human-centered AI design patterns, Augmentation vs Automation, and Error handling.
+6. **Marty Cagan (Silicon Valley Product Group):** *Inspired: How to Create Tech Products Customers Love* — 4 Product Risks (Value, Usability, Feasibility, Viability).
+7. **Google NotebookLM:** https://notebooklm.google.com/ (Tài liệu sản phẩm và cơ chế Grounding/Citation).
+8. **Quizlet Magic Notes:** https://quizlet.com/features/magic-notes (Tính năng AI Flashcard và Spaced Repetition).
+9. **Otter.ai:** https://otter.ai/ (Hệ thống transcript và tóm tắt cuộc họp/bài giảng).
 
