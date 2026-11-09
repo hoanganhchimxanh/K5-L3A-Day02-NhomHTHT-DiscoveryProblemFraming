@@ -146,36 +146,122 @@ Tổng hợp:
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — 6 bước, ~240' chuẩn bị ôn tập mỗi buổi
 
+[1 Học, tiếp nhận kiến thức: trong buổi]
+→ [2 Ghi chú, lưu tài liệu: ~20']
+→ [3 Tìm thêm tài liệu: ~70']          ← BOTTLENECK
+→ [4 Đọc lại, tổng hợp ý chính: ~90']  ← BOTTLENECK
+→ [5 Tự tạo câu hỏi/bài tập: ~60']     ← BOTTLENECK
+→ [6 Ôn tập cuối tuần: học thật, không tính vào baseline]
+
+```
+
+```markdown
+```mermaid
+flowchart LR
+    S1["1 Học, tiếp nhận kiến thức<br/>trong buổi"]
+    S2["2 Ghi chú, lưu tài liệu<br/>~20 phút"]
+    S3["3 Tìm thêm tài liệu<br/>~70 phút"]
+    S4["4 Đọc lại, tổng hợp ý chính<br/>~90 phút"]
+    S5["5 Tự tạo câu hỏi/bài tập<br/>~60 phút"]
+    S6["6 Ôn tập cuối tuần<br/>học thật, không tính vào baseline"]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6
+
+    classDef bottleneck fill:#fde2e2,stroke:#d32f2f,stroke-width:2px,color:#000
+    classDef normal fill:#f5f5f5,stroke:#888,color:#000
+    classDef outside fill:#e8f0fe,stroke:#4a6fa5,stroke-dasharray:4 3,color:#000
+
+    class S3,S4,S5 bottleneck
+    class S2 normal
+    class S1,S6 outside
+```
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Learner | Bài giảng của giảng viên | Kiến thức tiếp nhận trên lớp | Trong buổi học, mỗi buổi | Không tính vào baseline |
+| 2 | Learner | Slide, tài liệu `docs/*.md`, transcript | Ghi chú cá nhân, tài liệu đã lưu | ~20' (ước lượng), mỗi buổi | Thủ công |
+| 3 | Learner | Phần chưa hiểu từ bước 2 | Danh sách tài liệu bổ sung | ~70' (ước lượng), mỗi buổi | **Nghẽn**: tự tìm trên nhiều nguồn |
+| 4 | Learner | Ghi chú + tài liệu gốc + tài liệu bổ sung | Bản tổng hợp ý chính | ~90' (ước lượng), mỗi buổi | **Nghẽn**: dễ bỏ sót ý, không biết mình yếu phần nào |
+| 5 | Learner | Bản tổng hợp | Câu hỏi/bài tập tự kiểm tra | ~60' (ước lượng), mỗi buổi | **Nghẽn**: tự đặt câu hỏi và tự biết đáp án |
+| 6 | Learner | Bản tổng hợp + bộ câu hỏi | Kiến thức được ôn lại | Cuối tuần | Là việc học thật, ngoài baseline |
 
 **Bottleneck chính:**
+Bước 3–5, khoảng 220/240 phút (~92%). Người học phải tự tìm, đọc, tổng hợp từ nhiều nguồn rồi tự đặt câu hỏi cho chính mình.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — khoảng 28' chuẩn bị/buổi (chưa tính bước làm quiz thật)
 
+[A1 Học + ghi chú trong buổi]                             ← CON NGƯỜI (không đổi)
+→ [A2 Script gom 4 nguồn, cắt transcript theo phần: ~3'] ← RULE
+→ [A3 AI tóm tắt theo template, mỗi ý ghi nguồn: ~3']    ← AI
+→ [A4 AI tạo ~10 câu hỏi + đáp án có nguồn: ~2']         ← AI
+→ [A5 Người học đối chiếu nguồn, gạch câu sai: ~20']     ← CON NGƯỜI (HITL)
+→ [A6 Người học tự làm quiz, ôn lại chỗ sai]             ← CON NGƯỜI (học thật)
+
+BOUNDARY:
+- AI không tự bổ sung kiến thức ngoài tài liệu nguồn; ý ngoài nguồn phải đánh dấu "ngoài tài liệu".
+- AI không tạo công thức, ví dụ, đáp án không có căn cứ.
+- AI không trả lời quiz thay và không chấm người học.
+- Bản AI chỉ được dùng hoặc chia sẻ cho nhóm sau khi qua bước A5.
+
+PHƯƠNG ÁN QUAY VỀ:
+- Bản tóm tắt/câu hỏi sai hoặc kém → người học bỏ bản AI, dùng template ghi chú Markdown
+  + checklist heading và flashcard từ bảng "Thuật ngữ" do script (Rule) trích.
+- AI hoặc công cụ không chạy → bước A2 vẫn cho ra checklist, người học tự làm từ đó.
+
+```
+
+```markdown
+```mermaid
+flowchart LR
+    A1["A1 Học + ghi chú trong buổi<br/>CON NGƯỜI, không đổi"]
+    A2["A2 Script gom 4 nguồn,<br/>cắt transcript theo phần<br/>~3 phút · RULE"]
+    A3["A3 AI tóm tắt theo template,<br/>mỗi ý ghi nguồn<br/>~3 phút · AI"]
+    A4["A4 AI tạo ~10 câu hỏi<br/>+ đáp án có nguồn<br/>~2 phút · AI"]
+    A5["A5 Người học đối chiếu nguồn,<br/>gạch câu sai<br/>~20 phút · CON NGƯỜI (HITL)"]
+    A6["A6 Người học tự làm quiz,<br/>ôn lại chỗ sai<br/>CON NGƯỜI, học thật"]
+
+    BD["BOUNDARY<br/>AI không bổ sung kiến thức ngoài nguồn,<br/>không bịa đáp án, không trả lời hay chấm quiz thay,<br/>chỉ dùng hoặc chia sẻ sau khi qua A5"]
+    FB["PHƯƠNG ÁN QUAY VỀ<br/>Bỏ bản AI, dùng template ghi chú Markdown<br/>+ checklist heading và flashcard do script trích"]
+
+    A1 --> A2 --> A3 --> A4 --> A5 --> A6
+
+    BD -.-> A3
+    BD -.-> A4
+    A5 -. "AI sai hoặc kém" .-> FB
+    A2 -. "AI hoặc công cụ không chạy" .-> FB
+    FB -.-> A6
+
+    classDef human fill:#e8f0fe,stroke:#4a6fa5,stroke-width:2px,color:#000
+    classDef rule fill:#e6f4ea,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef ai fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    classDef note fill:#fffde7,stroke:#f9a825,stroke-dasharray:4 3,color:#000
+    classDef fallback fill:#f5f5f5,stroke:#888,stroke-dasharray:4 3,color:#000
+
+    class A1,A5,A6 human
+    class A2 rule
+    class A3,A4 ai
+    class BD note
+    class FB fallback
+```
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 6 | 6 | Gộp bước 1+2; thêm bước script, tóm tắt, tạo câu hỏi, kiểm tra. Số bước không giảm, thay đổi nằm ở ai làm bước nào. |
+| Tổng thời gian | ~240' | ~28' | Target ở mục 5: dưới 30'. Chưa tính tìm thêm tài liệu và làm quiz. Là kỳ vọng, chưa đo. |
+| Số bước thủ công | 6/6 | 3/6 | A1, A5, A6 do người học; A2 là Rule; A3, A4 là AI. |
+| Bottleneck chính | Bước 3–5 (tìm, tổng hợp, tự đặt câu hỏi) | Bước A5 (kiểm tra đối chiếu nguồn) | Chấp nhận được vì đây là điểm kiểm soát chất lượng, giống bài mẫu. |
+| Rủi ro mới phát sinh | — | AI bịa hoặc tóm tắt hời hợt; người học chỉ đọc tóm tắt rồi bỏ qua bước tự học; transcript dài bị cắt mất ngữ cảnh; người học tin bản AI nên kiểm qua loa. | Xử lý bằng boundary (bắt buộc trích nguồn, đánh dấu “ngoài tài liệu”) và tiêu chí đánh giá ở mục 7. |
 
 ---
 
