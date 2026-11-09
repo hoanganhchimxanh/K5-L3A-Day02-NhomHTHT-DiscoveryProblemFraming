@@ -192,16 +192,14 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch problem #8 #7 #1 | #8 và #7 được vào Shortlist, #7 được chọn |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | 1. Nếu sử dụng AI để giải thích đề bài, làm sao đảm bảo AI không diễn giải sai yêu cầu gốc? 2. AI sẽ xử lý thế nào nếu phần việc không phù hợp với thành viên được giao/thành viên không đủ khả năng handle task đấy? 3. Vấn đề nằm ở việc thiếu tài xế, thời gian chờ hay việc phải liên tục theo dõi ứng dụng? 4. Nếu AI cảnh báo sai rằng đơn hàng sẽ giao trễ, điều đó có gây ảnh hưởng đến kế hoạch sản xuất hoặc khách hàng không? 5. Làm sao đảm bảo AI không bỏ sót công việc hoặc báo cáo sai tiến độ của thành viên? 6. Nếu video không có transcript hoặc nội dung được trình bày bằng hình ảnh/code, giải pháp có tìm kiếm chính xác được không? |
+| Nhận phản biện | Câu hỏi tôi nhận được: | **1.** AI chấm sai thì ai chịu trách nhiệm? Với những requirement và rubric chung chung thì liệu AI có hiểu nhầm không? **2.** Log tự điền thì có đáng tin không? Lấy lịch sử dùng AI từ đâu (mỗi công cụ một kiểu)? **3** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? **Tôi đã sửa:** Clear lại các constrant và thread xử lý của AI |
+| Gom cluster | Tổng hợp cluster | Gom nhóm các đề tài |
+| Chọn candidate problem | Chọn shortlist 5 candidate | 2 Candidate được vào shortlist, 1 candidate được chọn làm Problem chính |
+| Quy trình nhóm | Viết tài liệu Markdown | Fill toàn bộ Markdown cho phần task nhóm |
+| Problem Statement | Viết problem statement v0 + v1 | Tổng hợp các thay đổi sau các bước thống kê và chốt lại Problem Statement v1 |
+| Quyết định | Nêu ý kiến và chốt quyết định cuối cùng | Chốt quyết định cuối cùng  |
 
 ---
 
@@ -211,10 +209,7 @@ Quy trình nháp hiện tại:
 |---|---|---|---|---|
 | CP1 Scan | Gợi ý problem 7 + 8 | Gợi ý cho tôi ý tưởng hợp lý | Một vài ý tưởng từ AI hơi mơ hồ và không khớp với thực tế bản thân tôi | Thêm problem 7 và 8 |
 | CP2 Problem Card | Vẽ quy trình khi có AI cho các problem | Gợi ý workflow hợp lý khi áp dụng AI | Một số bước không hợp lý ở thực tế | Sửa lại cho hợp lý các workflow |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP5–6 Problem Statement | Tổng hợp thông tin workflow, gợi ý có nên thay đổi phần nào của problem statement không | Đưa ra gợi ý hợp lý | Câu trả lời quá dài | Rút ngắn câu trả lời cho phù hợp |
 
 ---
 
