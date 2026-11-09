@@ -209,8 +209,6 @@ Quy trình nháp hiện tại:
 |---|---|---|---|---|
 | CP1 Scan | Gợi ý problem 7 + 8 | Gợi ý cho tôi ý tưởng hợp lý | Một vài ý tưởng từ AI hơi mơ hồ và không khớp với thực tế bản thân tôi | Thêm problem 7 và 8 |
 | CP2 Problem Card | Vẽ quy trình khi có AI cho các problem | Gợi ý workflow hợp lý khi áp dụng AI | Một số bước không hợp lý ở thực tế | Sửa lại cho hợp lý các workflow |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | Tổng hợp thông tin workflow, gợi ý có nên thay đổi phần nào của problem statement không | Đưa ra gợi ý hợp lý | Câu trả lời quá dài | Rút ngắn câu trả lời cho phù hợp |
 
 ---
