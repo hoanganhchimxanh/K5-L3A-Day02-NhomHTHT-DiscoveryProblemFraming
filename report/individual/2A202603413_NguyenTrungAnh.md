@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603413_NguyenTrungAnh
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -20,10 +20,10 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | Tốn thời gian · Lặp lại | Khi xưởng có hàng cần giao trong ngày, quản lý kế hoạch sản xuất muốn đặt đúng loại xe và có tài xế nhận nhanh, để không phải bỏ dở việc lên kế hoạch sản xuất ngồi canh app | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, là người duy nhất lo cả sản xuất lẫn giao hàng | Hóa đơn Lalamove tuần 02–07/11/2026: **16 đơn / 6 ngày làm việc** (TB ~2,7 đơn/ngày; 12 đơn giao đi, 4 đơn lấy hàng về), cộng 1–2 chuyến ba gác/tự giao (ước lượng) → ~4 chuyến/ngày. Mỗi chuyến canh app ~___ phút (quan sát khi làm ERP tại xưởng) |
+| 2 | Pain từ người khác | Khi hàng đang trên đường mà app báo tài xế đứng yên một chỗ, quản lý kế hoạch muốn biết hàng có kịp hạn không, để báo trước cho khách thay vì đợi khách gọi hỏi | Quản lý kế hoạch sản xuất; khách nhận hàng | Hóa đơn tuần 02–07/11/2026: **7/16 đơn đặt từ 17h trở đi** (giờ tan tầm, kẹt xe), muộn nhất 20h59. Hóa đơn không ghi giờ giao thực tế; quan sát: ~___ lần/tuần phải gọi tài xế hoặc bị khách gọi hỏi hàng tới chưa |
+| 3 | Tốn thời gian · Pain từ người khác | Khi muốn giao bằng xe máy cho rẻ, quản lý kế hoạch muốn có tài xế gần xưởng nhận đơn, để không phải chờ lâu rồi thêm tiền hoặc đổi sang xe to hơn | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | Hóa đơn tuần 02–07/11/2026: 12 đơn xe máy (TB ~100k đ/đơn), 4 đơn xe van 500kg (TB ~356k đ/đơn). **4 đơn van chiếm 54% chi phí giao cả tuần** (1,42tr / 2,62tr). Cùng một tuyến, giá xe máy chênh tới ~27k đ (80k–107k). ___/4 đơn van là do đặt xe máy không ai nhận (cần xác nhận lại) |
+| 4 | Pain từ người khác · Cần đọc, tổng hợp nhiều thông tin | Khi công nhân có bức xúc và chỉ tâm sự với tổ trưởng, quản lý xưởng muốn biết những chuyện bị than đi than lại, để sửa trước khi người ta chán rồi nghỉ | Công nhân, tổ trưởng, quản lý xưởng (thông tin dừng ở tổ trưởng, không lên tới quản lý) | Quan sát tại xưởng: xưởng không có HR hay kênh góp ý riêng, QC cũng là công nhân; công nhân than với tổ trưởng ~___ lần/tuần (ước lượng); ___ người nghỉ trong ___ tháng mà quản lý không rõ lý do |
 | 5 | | | | |
 | 6 | | | | |
 | 7 | | | | |
@@ -31,7 +31,8 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
--
+- Ý 1–4 là của tôi, lấy từ thời gian làm ERP cho xưởng gia công. AI giúp viết lại theo dạng Job Story và tách ý giao hàng thành 3 dòng theo từng bước nghẽn (đặt xe, theo dõi, thiếu tài xế xe máy).
+- Ý 4: AI gợi ý để HR/QC đi vòng ghi nhận phàn nàn. Tôi sửa lại vì xưởng không có HR và QC cũng là công nhân, kênh thật là tổ trưởng.
 
 ---
 
@@ -143,7 +144,7 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
+| CP1 Scan | Trình bày lại ý tưởng, viết lại theo dạng Job Story, gợi ý dấu hiệu thật cần thu thập | Ép mỗi dòng phải có số; chỉ ra "điều phối xe tự động" là giải pháp chứ không phải problem; tách ý giao hàng theo từng bước nghẽn | Tưởng tôi từng làm ở Lalamove (thật ra tôi làm ERP cho xưởng có dùng Lalamove); gợi ý HR/QC đi vòng ghi nhận phàn nàn, không hợp xưởng nhỏ không có HR | Nói rõ bối cảnh thật; đổi nguồn bằng chứng sang email Lalamove; đổi kênh ở ý 4 thành tổ trưởng |
 | CP2 Problem Card | | | | |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
