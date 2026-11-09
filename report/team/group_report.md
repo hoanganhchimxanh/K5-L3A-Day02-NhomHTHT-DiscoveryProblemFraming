@@ -24,8 +24,8 @@
 | 4 | Nguyễn Hoàng Anh | Đọc hiểu yêu cầu đề bài lab | Học viên (cá nhân và trưởng nhóm) | | 1. Nếu sử dụng AI để giải thích đề bài, làm sao đảm bảo AI không diễn giải sai yêu cầu gốc? (Huy Hoàng) 2. Đề bài lab thường có nhiều ràng buộc ngầm và tiêu chí chấm điểm rất chi tiết (như SUBMISSION, RUBRIC). Nếu để AI tóm tắt, làm sao bạn chắc chắn AI không tóm tắt thiếu các quy định nhỏ khiến cả nhóm bị trừ điểm oan? (Ngọc Tuyên) 3. Việc đọc lâu là do đề bài khó hay do mình thiếu checklist đọc nhanh? Nếu chỉ cần 1 bảng câu hỏi cố định (Nộp file gì? Deadline lúc nào? Tiêu chí nào nhiều điểm nhất?) thì có cần đến AI không? (Ngọc Tuyên)|
 | 5 | Nguyễn Hoàng Anh | Phân chia công việc cho thành viên nhóm | Trưởng nhóm | | 1. AI sẽ xử lý thế nào nếu phần việc không phù hợp với thành viên được giao/thành viên không đủ khả năng handle task đấy? (Huy Hoàng) 2. Làm sao đảm bảo công việc được phân chia đồng đều và không có thành viên bị quá tải? (Huy Hoàng) 3. Nút thắt làm mất 45 phút thực chất là lúc 'nghĩ ra đầu việc', hay là lúc 'thương lượng ai nhận phần khó'? AI có giải quyết được tâm lý đùn đẩy phần khó của thành viên không? (Ngọc Tuyên) 4. AI không biết được tuần này ai bận thi, ai giỏi phần nào và thời gian rảnh của từng người. Liệu AI phân chia có thực tế hơn việc 4 người bật mic nói chuyện 5 phút không? (Ngọc Tuyên) |
 | 6 | Nguyễn Hoàng Anh | Kiểm tra tiến độ commit của thành viên theo branch | Trưởng nhóm | | 1. Nỗi đau ở đây là do 'GitHub khó theo dõi', hay do 'thành viên không chịu commit đúng hạn'? Nếu thành viên không chịu làm bài thì dù có tool báo cáo tự động, bạn vẫn phải đi nhắn tin giục từng người bằng tay? (Ngọc Tuyên) 2. GitHub đã có sẵn tab Network Graph, và chỉ cần 1 Webhook/GitHub Action bắn thông báo về Discord/Telegram mỗi khi có commit mới là xong. Việc này chỉ cần Rule cơ bản, tại sao lại cần đến AI ở đây? (Ngọc Tuyên) |
-| 7 | Nguyễn Trung Anh | Đặt xe và canh app chờ tài xế nhận | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, người duy nhất lo cả sản xuất lẫn giao hàng | | |
-| 8 | Nguyễn Trung Anh | Theo dõi hàng trên đường, lo giao trễ | Quản lý kế hoạch sản xuất; khách nhận hàng | | |
+| 7 | Nguyễn Trung Anh | Đặt xe và canh app chờ tài xế nhận | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, người duy nhất lo cả sản xuất lẫn giao hàng | | 1. Vấn đề nằm ở việc thiếu tài xế, thời gian chờ hay việc phải liên tục theo dõi ứng dụng? (Huy Hoàng) |
+| 8 | Nguyễn Trung Anh | Theo dõi hàng trên đường, lo giao trễ | Quản lý kế hoạch sản xuất; khách nhận hàng | | 1. Nếu AI cảnh báo sai rằng đơn hàng sẽ giao trễ, điều đó có gây ảnh hưởng đến kế hoạch sản xuất hoặc khách hàng không? (Huy Hoàng) |
 | 9 | Nguyễn Trung Anh | Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | | |
 | 10 | Dương Ngọc Tuyên | Đối chiếu quy cách bài lab trước khi nộp | Sinh viên đang làm bài lab môn học | | |
 | 11 | Dương Ngọc Tuyên | Báo cáo tiến độ tuần cho nhóm đồ án | Thành viên phụ trách tổng hợp báo cáo tuần của nhóm đồ án | | 1. Làm sao đảm bảo AI không bỏ sót công việc hoặc báo cáo sai tiến độ của thành viên? (Huy Hoàng) |
@@ -35,8 +35,8 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
+| A | 1, 10 |  |
+| B | 2, 12 | |
 | C | | |
 
 ### 2.3. Opportunity Solution Tree rút gọn
