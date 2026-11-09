@@ -88,10 +88,14 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 | Gom Cluster | 2.2. Cluster | d389288dddad0de944487f151d2bff465f8f4d20 |
 | Chấm điểm shortlist | 2.4. Chấm điểm shortlist | d389288dddad0de944487f151d2bff465f8f4d20 |
 | Problem Statement v0 | 5. Problem Statement v0 (CP5) | 3233f69a9f4f5abe8641dd42dd30dbc8925347dd |
+| Kết luận | Kết luận và hướng đi | (Chưa commit nên chưa biết) |
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Học được cách xác định và thu hẹp vấn đề dựa trên nhu cầu thực tế của người dùng, thay vì chỉ dựa vào suy đoán cá nhân.
+- Phỏng vấn và khảo sát giúp mình nhận ra rằng mỗi người học có nhu cầu khác nhau, pain của mình có thể không phải pain của người khác.
+- Trong mọi công việc do Generative AI thực thi hầu hết đều phải có HITL để confirm, nhất là những gì liên quan đến học thuật.
+
 
 ### NguyenTrungAnh-2A202603413
 

@@ -196,7 +196,6 @@ HIỆN TẠI — 6 bước, ~240' chuẩn bị ôn tập mỗi buổi
 
 ```
 
-```markdown
 ```mermaid
 flowchart LR
     S1["1 Học, tiếp nhận kiến thức<br/>trong buổi"]
@@ -215,7 +214,6 @@ flowchart LR
     class S3,S4,S5 bottleneck
     class S2 normal
     class S1,S6 outside
-```
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
@@ -257,7 +255,6 @@ PHƯƠNG ÁN QUAY VỀ:
 
 ```
 
-```markdown
 ```mermaid
 flowchart LR
     A1["A1 Học + ghi chú trong buổi<br/>CON NGƯỜI, không đổi"]
@@ -289,7 +286,6 @@ flowchart LR
     class A3,A4 ai
     class BD note
     class FB fallback
-```
 ```
 
 ### 4.3. Before / after
@@ -424,31 +420,46 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | TB | Có tín hiệu nhu cầu ban đầu: 3/3 người được phỏng vấn gặp khó khăn khi đọc lại slide dài; 2/3 muốn có quiz/flashcard; 7/8 người trong micro poll muốn có quiz sau buổi học. Tuy nhiên, nhu cầu giữa các cá nhân chưa đồng nhất: có người thích tự viết flashcard để ghi nhớ và 2/8 người chỉ cần xem lại code thực hành trên GitHub. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | TB | Người được phỏng vấn có thể hiểu quy trình sử dụng ở mức ý tưởng, nhưng nhóm chưa thử nghiệm prototype để xác nhận thao tác thực tế, mức độ dễ sử dụng và công sức cần bỏ ra để kiểm tra đầu ra. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | TB | Xác định được 4 nguồn đầu vào gồm tài liệu Markdown, slide, transcript và ghi chú cá nhân. Có thể sử dụng công cụ AI hiện có để tóm tắt và tạo câu hỏi theo prompt template. Tuy nhiên, transcript dài có thể cần chia nhỏ; AI có nguy cơ diễn giải sai thuật ngữ, công thức, bỏ sót kiến thức quan trọng hoặc tạo nội dung không có trong tài liệu. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | TB | Nếu sử dụng công cụ AI có sẵn và prompt template cố định, chi phí triển khai ban đầu có thể thấp. Tuy nhiên, chi phí token phụ thuộc vào độ dài và độ phức tạp của tài liệu, đặc biệt với transcript dài. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Not Yet
 
-**Lý do:**
+**Lý do:**  
+Nhóm chọn Not Yet vì đã xác định được vấn đề người học gặp phải, nhưng chưa đủ bằng chứng để xác nhận Workflow AI là phương án phù hợp nhất. Chưa kiểm chứng được mức độ sẵn sàng sử dụng, chất lượng đầu ra AI và lợi ích thực tế so với phương án tự ghi chú hoặc sử dụng công cụ hiện có.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Cần kiểm chứng:**  
+- Thử nghiệm giải pháp với một số sinh viên qua nhiều buổi học thực tế để xác định họ có tiếp tục sử dụng sau lần trải nghiệm đầu tiên hay không.
+- Đo thời gian thực tế trước và sau khi sử dụng, kiểm tra mục tiêu giảm từ khoảng 240 phút xuống dưới 30 phút có khả thi không.
+- Đánh giá độ chính xác của bản tóm tắt, câu hỏi, đáp án và trích dẫn nguồn thông qua đối chiếu thủ công với tài liệu gốc.
+- Đo chi phí token trung bình cho mỗi buổi học với các loại tài liệu có độ dài và độ phức tạp khác nhau.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
-
-**Nếu No-Go — nên làm gì thay AI:**
-
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng**:  
+Nếu sau 3 buổi học thử nghiệm, giải pháp không giúp giảm thời gian chuẩn bị ôn tập xuống dưới 30 phút, độ chính xác nội dung không đạt 90%, hoặc người học không tiếp tục sử dụng vì không thấy giá trị rõ ràng, nhóm sẽ dừng phát triển Workflow AI và quay về phương án No AI: sử dụng template Markdown/Cornell Notes kết hợp script Rule để trích xuất heading và thuật ngữ từ tài liệu.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- **Hạn chế về kiểm chứng người dùng:** Số lượng người được phỏng vấn còn ít (3 người phỏng vấn sâu và 8 người tham gia micro poll), chưa đủ đại diện cho nhiều nhóm sinh viên và lĩnh vực học tập khác nhau. Nhu cầu sử dụng AI để ôn tập cũng chưa thống nhất giữa các đối tượng.
 
-## 10. Tài liệu tham khảo
+- **Hạn chế về độ chính xác của AI:** AI có thể tóm tắt thiếu ý quan trọng, diễn giải sai thuật ngữ hoặc tạo câu hỏi và đáp án không chính xác. Đặc biệt, các tài liệu chuyên môn có công thức, code hoặc nội dung kỹ thuật phức tạp có thể làm tăng nguy cơ hallucination.
 
--
+- **Hạn chế về dữ liệu đầu vào:** Chất lượng đầu ra phụ thuộc vào cấu trúc và chất lượng của slide, transcript, ghi chú cá nhân và tài liệu bài học. Transcript dài có thể phải chia nhỏ, dẫn đến nguy cơ mất ngữ cảnh khi xử lý.
+
+**Hướng tiếp theo:**
+
+1. **Tiếp tục kiểm chứng nhu cầu:** Mở rộng phỏng vấn và thử nghiệm với nhiều sinh viên thuộc các ngành học khác nhau để xác định nhu cầu thực tế và tần suất sử dụng giải pháp.
+
+2. **Đánh giá chất lượng đầu ra:** Đối chiếu bản tóm tắt, câu hỏi và đáp án do AI tạo với tài liệu gốc; đo tỷ lệ chính xác, tỷ lệ trích dẫn đúng và số lượng nội dung bị bỏ sót hoặc tạo sai.
+
+3. **Cải thiện prompt và cơ chế kiểm soát:** Bổ sung quy tắc yêu cầu AI chỉ sử dụng thông tin từ tài liệu nguồn, bắt buộc trích dẫn vị trí tham chiếu và đánh dấu rõ những nội dung không tìm thấy trong nguồn.
+
+4. **So sánh với phương án không sử dụng AI:** Đánh giá Workflow AI với template Cornell Notes và script Rule để xác định mức độ cải thiện về thời gian, chất lượng tài liệu và trải nghiệm người học.
+
+Sau khi có kết quả thử nghiệm, nhóm sẽ đánh giá lại bốn yếu tố Value, Usability, Feasibility và Viability để đưa ra quyết định Go hoặc No-Go cho giai đoạn phát triển tiếp theo.
+
