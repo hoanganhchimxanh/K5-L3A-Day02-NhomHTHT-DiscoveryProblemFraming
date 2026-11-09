@@ -201,4 +201,15 @@ Nếu được làm lại, tôi sẽ phản biện vấn đề mọi người r�
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
++) Problem: Việc tổng hợp kiến thức sau mỗi buổi học tốn nhiều thời gian và công sức vì sinh viên phải tìm kiếm, phân loại, sắp xếp và đọc hiểu nhiều tài liệu khác nhau.
+
++) Quy trình: Gồm 5 bước: (1) Tiếp thu kiến thức từ giảng viên, (2) Ghi chép và thu thập tài liệu, (3) Sắp xếp tài liệu, (4) Đọc lại và chọn lọc kiến thức, (5) Tạo câu hỏi ôn tập. Điểm nghẽn nằm ở bước 3–5 vì phải tự tìm kiếm, sắp xếp và đọc hiểu tài liệu. Đây cũng là phần tiêu tốn khoảng 4 giờ.
+
++) Metric: Giảm thời gian tổng hợp từ 4 giờ xuống còn 30 phút, tạo ra tài liệu tóm tắt và bộ câu hỏi ôn tập, đồng thời đảm bảo độ chính xác so với tài liệu gốc.
+
++) Boundary: Sinh viên vẫn phải tự tải lên các tài liệu cần tổng hợp trong ngày vì AI không thể tự biết người học có những tài liệu nào.
+
++) Sử dụng AI: Chọn Workflow vì độ mơ hồ cao nhưng độ phức tạp thấp. AI có thể hỗ trợ xuyên suốt quy trình tổng hợp tài liệu.
+
++) Quyết định: Not Yet vì chưa biết sinh viên có thực sự cần và sẵn sàng sử dụng giải pháp này hay không. Cần nghiên cứu thêm để xác thực nhu cầu thực tế.
 ---
