@@ -35,9 +35,10 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | 1, 10 |  |
-| B | 2, 12 | |
-| C | | |
+| A — Báo cáo / tổng hợp | Báo cáo tuần, recap họp, báo cáo tiến độ lab | Gom thông tin nhiều nguồn rồi viết lại cho người khác đọc |
+| B — Tìm kiếm | Tìm quyết định cũ trong Slack, tìm tài liệu trên LMS, FAQ lab | Tìm đúng thông tin trong nhiều nguồn rời rạc |
+| C — Review | Review PRD, kiểm Problem Statement, review bài tập | Đọc bản nháp và chỉ ra thiếu sót |
+| D — Theo dõi việc | Theo dõi action item, nhắc deadline | Sau cuộc họp nhiều việc bị rơi |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
@@ -58,9 +59,11 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Tự động kiểm tra bài Lab với Requirement và Rubric | 5 | 3 | 3 | 5 | 4 | 4 | 3 | **27** |
+| Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học | 5 | 4 | 5 | 4 | 4 | 5 | 5 | **32** |
+| Đọc hiểu yêu cầu đề bài lab | 5 | 4 | 4 | 4 | 4 | 3 | 5 | **29** |
+| Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
+| Đặt xe và canh app chờ tài xế nhận | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
 
 **Candidate được chọn:**
 
