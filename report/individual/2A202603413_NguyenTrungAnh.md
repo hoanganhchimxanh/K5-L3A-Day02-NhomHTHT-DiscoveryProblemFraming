@@ -20,10 +20,10 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Tốn thời gian · Lặp lại | Khi xưởng có hàng cần giao trong ngày, quản lý kế hoạch sản xuất muốn đặt đúng loại xe và có tài xế nhận nhanh, để không phải bỏ dở việc lên kế hoạch sản xuất ngồi canh app | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, là người duy nhất lo cả sản xuất lẫn giao hàng | Hóa đơn Lalamove tuần 02–07/11/2026: **16 đơn / 6 ngày làm việc** (TB ~2,7 đơn/ngày; 12 đơn giao đi, 4 đơn lấy hàng về), cộng 1–2 chuyến ba gác/tự giao (ước lượng) → ~4 chuyến/ngày. Mỗi chuyến canh app ~___ phút (quan sát khi làm ERP tại xưởng) |
-| 2 | Pain từ người khác | Khi hàng đang trên đường mà app báo tài xế đứng yên một chỗ, quản lý kế hoạch muốn biết hàng có kịp hạn không, để báo trước cho khách thay vì đợi khách gọi hỏi | Quản lý kế hoạch sản xuất; khách nhận hàng | Hóa đơn tuần 02–07/11/2026: **7/16 đơn đặt từ 17h trở đi** (giờ tan tầm, kẹt xe), muộn nhất 20h59. Hóa đơn không ghi giờ giao thực tế; quan sát: ~___ lần/tuần phải gọi tài xế hoặc bị khách gọi hỏi hàng tới chưa |
-| 3 | Tốn thời gian · Pain từ người khác | Khi muốn giao bằng xe máy cho rẻ, quản lý kế hoạch muốn có tài xế gần xưởng nhận đơn, để không phải chờ lâu rồi thêm tiền hoặc đổi sang xe to hơn | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | Hóa đơn tuần 02–07/11/2026: 12 đơn xe máy (TB ~100k đ/đơn), 4 đơn xe van 500kg (TB ~356k đ/đơn). **4 đơn van chiếm 54% chi phí giao cả tuần** (1,42tr / 2,62tr). Cùng một tuyến, giá xe máy chênh tới ~27k đ (80k–107k). ___/4 đơn van là do đặt xe máy không ai nhận (cần xác nhận lại) |
-| 4 | Pain từ người khác · Cần đọc, tổng hợp nhiều thông tin | Khi công nhân có bức xúc và chỉ tâm sự với tổ trưởng, quản lý xưởng muốn biết những chuyện bị than đi than lại, để sửa trước khi người ta chán rồi nghỉ | Công nhân, tổ trưởng, quản lý xưởng (thông tin dừng ở tổ trưởng, không lên tới quản lý) | Quan sát tại xưởng: xưởng không có HR hay kênh góp ý riêng, QC cũng là công nhân; công nhân than với tổ trưởng ~___ lần/tuần (ước lượng); ___ người nghỉ trong ___ tháng mà quản lý không rõ lý do |
+| 1 | Tốn thời gian · Lặp lại | Khi xưởng có hàng cần giao trong ngày, quản lý kế hoạch sản xuất muốn đặt đúng loại xe và có tài xế nhận nhanh, để không phải bỏ dở việc lên kế hoạch sản xuất ngồi canh app | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, là người duy nhất lo cả sản xuất lẫn giao hàng | Hóa đơn Lalamove tuần 02–07/11/2026: **16 đơn / 6 ngày làm việc** (TB ~2,7 đơn/ngày; 12 đơn giao đi, 4 đơn lấy hàng về), cộng 1–2 chuyến ba gác/tự giao (ước lượng) → ~4 chuyến/ngày. Quản lý phải canh app suốt từ lúc đặt đến lúc giao thành công (quan sát khi làm ERP tại xưởng) |
+| 2 | Pain từ người khác | Khi hàng đang trên đường mà app báo tài xế đứng yên một chỗ, quản lý kế hoạch muốn biết hàng có kịp hạn không, để báo trước cho khách thay vì đợi khách gọi hỏi | Quản lý kế hoạch sản xuất; khách nhận hàng | Hóa đơn tuần 02–07/11/2026: **7/16 đơn đặt từ 17h trở đi** (giờ tan tầm, kẹt xe), muộn nhất 20h59. Hóa đơn không ghi giờ giao thực tế; quan sát: **đơn nào cũng** phải gọi tài xế hoặc bị khách gọi hỏi hàng tới chưa (~16 lần/tuần theo số đơn tuần 02–07/11) |
+| 3 | Tốn thời gian · Pain từ người khác | Khi muốn giao bằng xe máy cho rẻ, quản lý kế hoạch muốn có tài xế gần xưởng nhận đơn, để không phải chờ lâu rồi thêm tiền hoặc đổi sang xe to hơn | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | Hóa đơn tuần 02–07/11/2026: 12 đơn xe máy (TB ~100k đ/đơn), 4 đơn xe van 500kg (TB ~356k đ/đơn). **4 đơn van chiếm 54% chi phí giao cả tuần** (1,42tr / 2,62tr). Cùng một tuyến, giá xe máy chênh tới ~27k đ (80k–107k) |
+| 4 | Pain từ người khác · Cần đọc, tổng hợp nhiều thông tin | Khi công nhân có bức xúc và chỉ tâm sự với tổ trưởng, quản lý xưởng muốn biết những chuyện bị than đi than lại, để sửa trước khi người ta chán rồi nghỉ | Công nhân, tổ trưởng, quản lý xưởng (thông tin dừng ở tổ trưởng, không lên tới quản lý) | Quan sát tại xưởng: xưởng không có HR hay kênh góp ý riêng, QC cũng là công nhân; công nhân chủ yếu tâm sự với tổ trưởng, chuyện không lên tới quản lý (chưa có số đếm) |
 | 5 | | | | |
 | 6 | | | | |
 | 7 | | | | |
@@ -54,9 +54,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Actor | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, người duy nhất lo cả sản xuất lẫn giao hàng |
 | Thời điểm / bối cảnh | Mỗi ngày làm việc, đơn đặt rải từ 12h đến 21h; ~2,7 đơn Lalamove/ngày, cộng 1–2 chuyến ba gác/tự giao |
 | Quy trình hiện tại (3–7 bước) | 1. Hàng xong hoặc cần lấy hàng về → 2. Ước lượng kích thước, chọn loại xe → 3. Đặt đơn trên app → 4. Canh app chờ tài xế nhận (không ai nhận thì đặt lại, thêm tiền hoặc đổi xe) → 5. Tài xế tới, bàn giao hàng → 6. Quay lại việc kế hoạch |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4: canh app chờ tài xế nhận, ~___ phút/đơn |
-| Impact (nếu không giải thì sao) | ~2,7 đơn/ngày × ___ phút = ~___ phút/ngày quản lý bị kéo khỏi việc chính; kế hoạch sản xuất bị gián đoạn nhiều lần trong ngày |
-| Success metric (baseline → target) | Thời gian từ lúc đặt đến lúc có tài xế nhận: ___ phút/đơn → dưới ___ phút/đơn. Đo bằng cách ghi giờ đặt và giờ có tài xế nhận trong 2 tuần |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4: canh app chờ tài xế nhận; thực tế quản lý canh app suốt từ lúc đặt đến lúc giao thành công, đơn nào cũng vậy (chưa bấm giờ) |
+| Impact (nếu không giải thì sao) | ~2,7 đơn/ngày, đơn nào quản lý cũng canh app tới khi giao xong → việc lên kế hoạch sản xuất bị ngắt quãng nhiều lần mỗi ngày |
+| Success metric (baseline → target) | Baseline: chưa bấm giờ, hiện canh app suốt cả chuyến. Target: chỉ thao tác lúc đặt và lúc xác nhận giao xong. Cách đo: ghi giờ đặt, giờ có tài xế nhận, giờ giao xong và số lần mở app mỗi đơn trong 2 tuần |
 | Phương án không dùng AI | Gom đơn theo khung giờ cố định; giao việc đặt xe cho người khác (tổ trưởng); giữ 1–2 tài xế quen giá cố định |
 | Giả thuyết về AI (nếu có) | Có lẽ không cần AI: chọn loại xe theo kích thước là bảng quy đổi (Rule), báo khi có tài xế nhận là thông báo của app |
 | Cảm nhận nhanh | **Rule** |
@@ -66,10 +66,12 @@ Quy trình nháp hiện tại:
 ```text
 HIỆN TẠI — mỗi đơn, ~2,7 đơn/ngày
 
-[Hàng xong / cần lấy hàng] → [Chọn loại xe: ~___'] → [Đặt app: ~___']
-→ [Canh app chờ tài xế nhận: ~___'] ← BOTTLENECK
+[Hàng xong / cần lấy hàng] → [Chọn loại xe] → [Đặt app]
+→ [Canh app chờ tài xế nhận] ← BOTTLENECK
    (không ai nhận → đặt lại / thêm tiền / đổi xe)
-→ [Tài xế tới, bàn giao: ~___'] → [Quay lại việc kế hoạch]
+→ [Tài xế tới, bàn giao] → [Vẫn canh app tới khi giao xong]
+
+Chưa bấm giờ từng bước: quản lý canh app suốt từ lúc đặt đến lúc giao xong.
 ```
 
 ### Problem Card #2
@@ -80,9 +82,9 @@ HIỆN TẠI — mỗi đơn, ~2,7 đơn/ngày
 | Actor | Quản lý kế hoạch sản xuất; khách nhận hàng |
 | Thời điểm / bối cảnh | Sau khi tài xế lấy hàng; 7/16 đơn tuần 02–07/11 đặt từ 17h trở đi (giờ tan tầm, kẹt xe), có đơn đặt lúc 20h59 |
 | Quy trình hiện tại (3–7 bước) | 1. Tài xế lấy hàng → 2. Thỉnh thoảng mở app xem vị trí → 3. Thấy đứng yên lâu thì gọi tài xế hỏi → 4. Có nguy cơ trễ thì báo khách, hoặc khách gọi hỏi trước → 5. Xác nhận khách đã nhận hàng |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–3: mở app xem và gọi tài xế, ~___ lần/đơn, ~___ phút/đơn; nặng hơn với đơn sau 17h |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–3: mở app xem và gọi tài xế, đơn nào cũng phải làm (chưa bấm giờ); nặng hơn với đơn sau 17h |
 | Impact (nếu không giải thì sao) | Khách phải gọi hỏi, mất uy tín với khách; quản lý bị gián đoạn nhiều lần cho cùng một đơn |
-| Success metric (baseline → target) | Số lần khách gọi hỏi hàng tới chưa: ~___ lần/tuần → 0; số lần quản lý mở app/gọi tài xế: ~___ lần/đơn → tối đa 1 |
+| Success metric (baseline → target) | Số đơn phải gọi tài xế hoặc bị khách gọi hỏi: ~16/16 đơn/tuần (mọi đơn) → chỉ còn những đơn có sự cố thật. Cách đo: đánh dấu từng đơn trong 2 tuần |
 | Phương án không dùng AI | Gửi thẳng link theo dõi hành trình cho khách (nếu app có, cần kiểm tra); tránh đặt đơn vào giờ tan tầm |
 | Giả thuyết về AI (nếu có) | Từ vị trí tài xế, giao thông, thời tiết, đoán đơn nào có nguy cơ trễ để báo sớm cho quản lý |
 | Cảm nhận nhanh | **Workflow / Chưa biết** |
@@ -92,10 +94,12 @@ Quy trình nháp hiện tại:
 ```text
 HIỆN TẠI — mỗi đơn sau khi tài xế lấy hàng
 
-[Tài xế lấy hàng] → [Mở app xem vị trí: ~___' × ___ lần] ← BOTTLENECK
-→ [Đứng yên lâu → gọi tài xế: ~___']
-→ [Nguy cơ trễ → báo khách / khách gọi hỏi: ~___']
-→ [Xác nhận đã giao: ~___']
+[Tài xế lấy hàng] → [Mở app xem vị trí, nhiều lần] ← BOTTLENECK
+→ [Đứng yên lâu → gọi tài xế]
+→ [Nguy cơ trễ → báo khách / khách gọi hỏi]
+→ [Xác nhận đã giao]
+
+Chưa bấm giờ từng bước; đơn nào cũng phải gọi tài xế hoặc bị khách gọi hỏi.
 ```
 
 ### Problem Card #3
@@ -106,9 +110,9 @@ HIỆN TẠI — mỗi đơn sau khi tài xế lấy hàng
 | Actor | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác |
 | Thời điểm / bối cảnh | Khi hàng đủ nhỏ để đi xe máy, nhất là giờ cao điểm; tuần 02–07/11: 12 đơn xe máy (TB ~100k đ), 4 đơn van 500kg (TB ~356k đ) |
 | Quy trình hiện tại (3–7 bước) | 1. Đặt xe máy → 2. Chờ, không ai nhận → 3. Thêm tiền, đặt lại, hoặc đổi sang xe máy chở khách / xe van → 4. Có tài xế nhận → 5. Giao hàng |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–3: chờ ~___ phút không ai nhận rồi phải trả thêm hoặc đổi xe |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–3: chờ không ai nhận rồi phải trả thêm hoặc đổi xe (chưa bấm giờ) |
 | Impact (nếu không giải thì sao) | 4 đơn van chiếm 54% chi phí giao cả tuần (1,42tr / 2,62tr); mỗi đơn bị ép đổi sang van tốn thêm ~250k đ so với xe máy |
-| Success metric (baseline → target) | Số đơn phải đổi sang xe đắt hơn: ___/tuần → 0; chi phí giao TB ~164k đ/đơn → dưới ___ đ/đơn. Đo bằng hóa đơn Lalamove hằng tuần |
+| Success metric (baseline → target) | Chi phí giao TB ~164k đ/đơn (tuần 02–07/11) → giảm; số đơn phải đổi sang xe đắt hơn: chưa đếm được → 0. Đo bằng hóa đơn Lalamove hằng tuần |
 | Phương án không dùng AI | Đặt sớm trước giờ cao điểm; giữ một tài xế xe máy quen giá cố định; so giá với app giao hàng khác |
 | Giả thuyết về AI (nếu có) | Không cần AI: việc phân bổ tài xế là của nền tảng; phía xưởng chỉ cần Rule (đặt sớm theo khung giờ, đặt song song nhiều app) |
 | Cảm nhận nhanh | **No AI / Rule** |
@@ -118,8 +122,8 @@ Quy trình nháp hiện tại:
 ```text
 HIỆN TẠI — đơn xe máy vào giờ cao điểm
 
-[Đặt xe máy: ~___'] → [Chờ, không ai nhận: ~___'] ← BOTTLENECK
-→ [Thêm tiền / đặt lại / đổi sang xe chở khách hoặc van: ~___', +___ đ]
+[Đặt xe máy] → [Chờ, không ai nhận] ← BOTTLENECK
+→ [Thêm tiền / đặt lại / đổi sang xe chở khách hoặc van: +~250k đ nếu đổi sang van]
 → [Có tài xế nhận] → [Giao hàng]
 ```
 
