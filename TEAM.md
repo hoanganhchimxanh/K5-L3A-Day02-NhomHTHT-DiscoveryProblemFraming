@@ -92,19 +92,26 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- Người phản biện chính của nhóm.
+- CP6: mục 6 "Mức can thiệp AI" trong báo cáo nhóm.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Pitch 3 candidate về giao hàng ở xưởng gia công nhỏ, có số liệu hóa đơn Lalamove thật (16 đơn / 6 ngày, 7/16 đơn đặt sau 17h).
+- Phản biện các card của nhóm bằng 2 câu hỏi: công sức build có đáng không khi khóa học chỉ còn vài tuần, và bài toán đang giải cho nhóm mình hay cho mọi học viên.
+- Chấm điểm shortlist ở CP3.
+- Phản biện Boundary/HITL của Problem Statement v0: đối chiếu toàn bộ bản tóm tắt với tài liệu gốc sẽ làm mất thời gian tiết kiệm được.
+- Viết mục 6: ma trận độ mơ hồ × độ phức tạp, so sánh No AI / Rule / Workflow / Agent, AI Canvas, 2 câu hỏi PAIR. Nhóm chọn mức Workflow.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- `group_report.md` mục 2.1 (dòng 7–9: card của tôi), mục 2.4 (bảng chấm điểm).
+- `group_report.md` mục 6, commit `1ac1d66`.
+- Báo cáo cá nhân `report/individual/2A202603413_NguyenTrungAnh.md`, mục 4.
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Phải đọc kỹ tài liệu (phương pháp, định nghĩa, ví dụ) và bối cảnh lab trước khi chọn ý tưởng; ý tưởng phải vừa sức với phạm vi lab.
 
 
 ### DuongNgocTuyen-2A202603511
