@@ -4,7 +4,7 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: NhomHTHT
 - Candidate problem nhóm chọn (1 câu):
 - Quyết định cuối (Go / Not Yet / No-Go):
 
@@ -12,12 +12,10 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-
-Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
+| 1 | Nguyễn Hoàng Anh | 2A202603385 | | https://github.com/hoanganhchimxanh |
+| 2 | Võ Huy Hoàng | 2A202603397 | | https://github.com/ferr2764 |
+| 3 | Nguyễn Trung Anh | 2A202603413 | | https://github.com/Rising-Apocalypse |
+| 4 | Dương Ngọc Tuyên | 2A202603511 | | https://github.com/tuyenboy198 |
 
 Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối thời gian, ghi chép, người phản biện chính, phụ trách kiểm chứng (phỏng vấn/survey), phụ trách research, vẽ quy trình, viết Problem Statement.
 
@@ -37,7 +35,63 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### NguyenHoangAnh-2A202603385
+
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
+
+### VoHuyHoang-2A202603397
+
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
+### NguyenTrungAnh-2A202603413
+
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
+
+### DuongNgocTuyen-2A202603511
 
 **Phần việc phụ trách:**
 
