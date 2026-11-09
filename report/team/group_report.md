@@ -45,14 +45,15 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian và công sức sinh viên cần bỏ ra để chuẩn bị tài liệu ôn tập sau mỗi buổi học, đồng thời đảm bảo kiến thức được tổng hợp đầy đủ, chính xác và dễ sử dụng.
+├── Opportunity A: Khó khăn trong việc thu thập và tổng hợp kiến thức từ nhiều nguồn học liệu khác nhau như slide, ghi chú cá nhân, tài liệu và video bài giảng.
+├── Opportunity B: Khó xác định kiến thức trọng tâm, phân biệt nội dung quan trọng và kiến thức bổ trợ cần ưu tiên ôn tập.
+├── Opportunity C: Mất nhiều thời gian chuyển kiến thức đã học thành tài liệu ôn tập có cấu trúc, dễ đọc và dễ ghi nhớ.
+└── Opportunity D: Khó kiểm tra tính đầy đủ và chính xác của tài liệu ôn tập, lo ngại bỏ sót hoặc sai lệch kiến thức so với bài giảng gốc.
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-
+Không
 -
 
 ### 2.4. Chấm điểm shortlist (1–5)
