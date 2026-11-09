@@ -7,7 +7,7 @@
 
 - Tên nhóm: NhomHTHT
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu): Tự động tổng hợp kiến thức trọng tâm và tạo bộ câu hỏi ôn tập từ tài liệu sau buổi học (slide, ghi chú, transcript)
+- Candidate problem được chọn (1 câu): Tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -18,51 +18,65 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Võ Huy Hoàng | Tự động kiểm tra bài Lab với Requirement và Rubric | Student | | 1. AI chấm sai thì ai chịu trách nhiệm? Với những requirement và rubric chung chung thì liệu AI có hiểu nhầm không? (Hoàng Anh) |
-| 2 | Võ Huy Hoàng | Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học | Student | | |
-| 3 | Võ Huy Hoàng | Tự động điền file AI-Logs.md | Student, LabCoach | | 1. Log tự điền thì có đáng tin không? Lấy lịch sử dùng AI từ đâu (mỗi công cụ một kiểu)? (Hoàng Anh) |
-| 4 | Nguyễn Hoàng Anh | Đọc hiểu yêu cầu đề bài lab | Học viên (cá nhân và trưởng nhóm) | | 1. Nếu sử dụng AI để giải thích đề bài, làm sao đảm bảo AI không diễn giải sai yêu cầu gốc? (Huy Hoàng) 2. Đề bài lab thường có nhiều ràng buộc ngầm và tiêu chí chấm điểm rất chi tiết (như SUBMISSION, RUBRIC). Nếu để AI tóm tắt, làm sao bạn chắc chắn AI không tóm tắt thiếu các quy định nhỏ khiến cả nhóm bị trừ điểm oan? (Ngọc Tuyên) 3. Việc đọc lâu là do đề bài khó hay do mình thiếu checklist đọc nhanh? Nếu chỉ cần 1 bảng câu hỏi cố định (Nộp file gì? Deadline lúc nào? Tiêu chí nào nhiều điểm nhất?) thì có cần đến AI không? (Ngọc Tuyên)|
-| 5 | Nguyễn Hoàng Anh | Phân chia công việc cho thành viên nhóm | Trưởng nhóm | | 1. AI sẽ xử lý thế nào nếu phần việc không phù hợp với thành viên được giao/thành viên không đủ khả năng handle task đấy? (Huy Hoàng) 2. Làm sao đảm bảo công việc được phân chia đồng đều và không có thành viên bị quá tải? (Huy Hoàng) 3. Nút thắt làm mất 45 phút thực chất là lúc 'nghĩ ra đầu việc', hay là lúc 'thương lượng ai nhận phần khó'? AI có giải quyết được tâm lý đùn đẩy phần khó của thành viên không? (Ngọc Tuyên) 4. AI không biết được tuần này ai bận thi, ai giỏi phần nào và thời gian rảnh của từng người. Liệu AI phân chia có thực tế hơn việc 4 người bật mic nói chuyện 5 phút không? (Ngọc Tuyên) |
-| 6 | Nguyễn Hoàng Anh | Kiểm tra tiến độ commit của thành viên theo branch | Trưởng nhóm | | 1. Nỗi đau ở đây là do 'GitHub khó theo dõi', hay do 'thành viên không chịu commit đúng hạn'? Nếu thành viên không chịu làm bài thì dù có tool báo cáo tự động, bạn vẫn phải đi nhắn tin giục từng người bằng tay? (Ngọc Tuyên) 2. GitHub đã có sẵn tab Network Graph, và chỉ cần 1 Webhook/GitHub Action bắn thông báo về Discord/Telegram mỗi khi có commit mới là xong. Việc này chỉ cần Rule cơ bản, tại sao lại cần đến AI ở đây? (Ngọc Tuyên) |
-| 7 | Nguyễn Trung Anh | Đặt xe và canh app chờ tài xế nhận | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, người duy nhất lo cả sản xuất lẫn giao hàng | | 1. Vấn đề nằm ở việc thiếu tài xế, thời gian chờ hay việc phải liên tục theo dõi ứng dụng? (Huy Hoàng) |
-| 8 | Nguyễn Trung Anh | Theo dõi hàng trên đường, lo giao trễ | Quản lý kế hoạch sản xuất; khách nhận hàng | | 1. Nếu AI cảnh báo sai rằng đơn hàng sẽ giao trễ, điều đó có gây ảnh hưởng đến kế hoạch sản xuất hoặc khách hàng không? (Huy Hoàng) |
-| 9 | Nguyễn Trung Anh | Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | | |
-| 10 | Dương Ngọc Tuyên | Đối chiếu quy cách bài lab trước khi nộp | Sinh viên đang làm bài lab môn học | | |
-| 11 | Dương Ngọc Tuyên | Báo cáo tiến độ tuần cho nhóm đồ án | Thành viên phụ trách tổng hợp báo cáo tuần của nhóm đồ án | | 1. Làm sao đảm bảo AI không bỏ sót công việc hoặc báo cáo sai tiến độ của thành viên? (Huy Hoàng) |
-| 12 | Dương Ngọc Tuyên | Dò tìm bài tập mẫu trong video bài giảng | Sinh viên tự học, tự ôn tập bài tập lớn | | 1. Nếu video không có transcript hoặc nội dung được trình bày bằng hình ảnh/code, giải pháp có tìm kiếm chính xác được không? (Huy Hoàng) |
+| 1 | Võ Huy Hoàng | Kiểm tra bài Lab với Requirement và Rubric | Student | Phải đọc nhiều tài liệu và đối chiếu thủ công giữa bài làm, Requirement và Rubric | **1.** AI chấm sai thì ai chịu trách nhiệm? Với những requirement và rubric chung chung thì liệu AI có hiểu nhầm không? (Hoàng Anh) **2.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 2 | Võ Huy Hoàng | Tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học | Student | Phải tự tìm kiếm, đọc và tổng hợp thông tin từ nhiều nguồn, sau đó tự xây dựng nội dung ôn tập | **1.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 3 | Võ Huy Hoàng | Điền file AI-Logs.md | Student, LabCoach | Phải nhớ lại các tương tác AI trước đó, chọn lọc thông tin quan trọng và trình bày lại theo đúng cấu trúc Markdown | **1.** Log tự điền thì có đáng tin không? Lấy lịch sử dùng AI từ đâu (mỗi công cụ một kiểu)? (Hoàng Anh) **2.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 4 | Nguyễn Hoàng Anh | Đọc hiểu yêu cầu đề bài lab | Học viên (cá nhân và trưởng nhóm) | Phải đọc đi đọc lại, tra thuật ngữ khi gặp khái niệm lạ | **1.** Nếu sử dụng AI để giải thích đề bài, làm sao đảm bảo AI không diễn giải sai yêu cầu gốc? (Huy Hoàng) **2.** Đề bài lab thường có nhiều ràng buộc ngầm và tiêu chí chấm điểm rất chi tiết (như SUBMISSION, RUBRIC). Nếu để AI tóm tắt, làm sao bạn chắc chắn AI không tóm tắt thiếu các quy định nhỏ khiến cả nhóm bị trừ điểm oan? (Ngọc Tuyên) **3.** Việc đọc lâu là do đề bài khó hay do mình thiếu checklist đọc nhanh? Nếu chỉ cần 1 bảng câu hỏi cố định (Nộp file gì? Deadline lúc nào? Tiêu chí nào nhiều điểm nhất?) thì có cần đến AI không? (Ngọc Tuyên) **4.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 5 | Nguyễn Hoàng Anh | Phân chia công việc cho thành viên nhóm | Trưởng nhóm | Thường có tranh luận hoặc không ai tự nguyện nhận phần khó | **1.** AI sẽ xử lý thế nào nếu phần việc không phù hợp với thành viên được giao/thành viên không đủ khả năng handle task đấy? (Huy Hoàng) **2.** Làm sao đảm bảo công việc được phân chia đồng đều và không có thành viên bị quá tải? (Huy Hoàng) **3.** Nút thắt làm mất 45 phút thực chất là lúc 'nghĩ ra đầu việc', hay là lúc 'thương lượng ai nhận phần khó'? AI có giải quyết được tâm lý đùn đẩy phần khó của thành viên không? (Ngọc Tuyên) **4.** AI không biết được tuần này ai bận thi, ai giỏi phần nào và thời gian rảnh của từng người. Liệu AI phân chia có thực tế hơn việc 4 người bật mic nói chuyện 5 phút không? (Ngọc Tuyên) **5.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 6 | Nguyễn Hoàng Anh | Kiểm tra tiến độ commit của thành viên theo branch | Trưởng nhóm | Phải lặp lại cho từng thành viên | **1.** Nỗi đau ở đây là do 'GitHub khó theo dõi', hay do 'thành viên không chịu commit đúng hạn'? Nếu thành viên không chịu làm bài thì dù có tool báo cáo tự động, bạn vẫn phải đi nhắn tin giục từng người bằng tay? (Ngọc Tuyên) **2.** GitHub đã có sẵn tab Network Graph, và chỉ cần 1 Webhook/GitHub Action bắn thông báo về Discord/Telegram mỗi khi có commit mới là xong. Việc này chỉ cần Rule cơ bản, tại sao lại cần đến AI ở đây? (Ngọc Tuyên) 3. Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 7 | Nguyễn Trung Anh | Đặt xe và canh app chờ tài xế nhận | Quản lý kế hoạch sản xuất ở xưởng gia công nhỏ, người duy nhất lo cả sản xuất lẫn giao hàng | Canh app chờ tài xế nhận; thực tế quản lý canh app suốt từ lúc đặt đến lúc giao thành công, đơn nào cũng vậy | **1.** Vấn đề nằm ở việc thiếu tài xế, thời gian chờ hay việc phải liên tục theo dõi ứng dụng? (Huy Hoàng) |
+| 8 | Nguyễn Trung Anh | Theo dõi hàng trên đường, lo giao trễ | Quản lý kế hoạch sản xuất; khách nhận hàng | Mở app xem và gọi tài xế, đơn nào cũng phải làm; nặng hơn với đơn sau 17h | **1.** Nếu AI cảnh báo sai rằng đơn hàng sẽ giao trễ, điều đó có gây ảnh hưởng đến kế hoạch sản xuất hoặc khách hàng không? (Huy Hoàng) |
+| 9 | Nguyễn Trung Anh | Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | Quản lý kế hoạch sản xuất; xưởng nằm ở khu ít đơn nên tài xế xe máy tụ ở chỗ khác | Chờ không ai nhận rồi phải trả thêm hoặc đổi xe | |
+| 10 | Dương Ngọc Tuyên | Đối chiếu quy cách bài lab trước khi nộp | Sinh viên đang làm bài lab môn học | Mở file báo cáo và rà soát checklist chuyển qua lại giữa nhiều file tài liệu, rất dễ nhìn sót | **1.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 11 | Dương Ngọc Tuyên | Báo cáo tiến độ tuần cho nhóm đồ án | Thành viên phụ trách tổng hợp báo cáo tuần của nhóm đồ án | Soạn phần nhận định và phân tích rủi ro mất nhiều thời gian vì phải tổng hợp dữ liệu rời rạc và diễn đạt thành câu chữ rõ ràng. | **1.** Làm sao đảm bảo AI không bỏ sót công việc hoặc báo cáo sai tiến độ của thành viên? (Huy Hoàng) **2.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
+| 12 | Dương Ngọc Tuyên | Dò tìm bài tập mẫu trong video bài giảng | Sinh viên tự học, tự ôn tập bài tập lớn | Dò tìm mốc thời gian bài tập mẫu trong video dài không có timestamp | **1.** Nếu video không có transcript hoặc nội dung được trình bày bằng hình ảnh/code, giải pháp có tìm kiếm chính xác được không? (Huy Hoàng) **2.** Công sức bỏ ra có đáng không? Khóa này còn vài tuần là hết. Nếu build giải pháp của card bạn thì mất bao lâu? Build xong còn bao nhiêu buổi lab để dùng? Thời gian tiết kiệm được (phút/lần × số lần còn lại × số người dùng) có nhiều hơn thời gian build + sửa lỗi không? So với làm checklist (gần như không tốn thời gian build) thì sao? (Trung Anh) |
 
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A — Báo cáo / tổng hợp | Báo cáo tuần, recap họp, báo cáo tiến độ lab | Gom thông tin nhiều nguồn rồi viết lại cho người khác đọc |
-| B — Tìm kiếm | Tìm quyết định cũ trong Slack, tìm tài liệu trên LMS, FAQ lab | Tìm đúng thông tin trong nhiều nguồn rời rạc |
-| C — Review | Review PRD, kiểm Problem Statement, review bài tập | Đọc bản nháp và chỉ ra thiếu sót |
-| D — Theo dõi việc | Theo dõi action item, nhắc deadline | Sau cuộc họp nhiều việc bị rơi |
+| A — Báo cáo / tổng hợp |  Tổng hợp kiến thức và tạo tài liệu ôn tập, Điền file AI-Logs.md, Đọc hiểu yêu cầu đề bài lab, Báo cáo tiến độ tuần | Gom và tổng hợp thông tin viết báo cáo |
+| B — Tìm kiếm | Đặt xe và canh app chờ tài xế nhận, Theo dõi hàng trên đường, Đặt xe máy cho rẻ nhưng không ai nhận | Tìm đúng thông tin |
+| C — Review | Kiểm tra bài Lab với Requirement và Rubric, Đối chiếu quy cách bài lab | Đọc source, so sánh và chỉ ra sai sót |
+| D — Theo dõi việc | Phân chia công việc, Kiểm tra tiến độ commit, Dò tìm bài tập mẫu | Tổng hợp thông tin từ Git |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: Giảm thời gian chuẩn bị tài liệu ôn tập từ 4 giờ xuống dưới 45 phút và tăng tỷ lệ sinh viên tự ôn tập kiến thức ngay trong tuần
-├── Opportunity A: Tài liệu sau buổi học nằm rải rác ở nhiều định dạng (slide PDF 40–50 trang, video ghi âm 2 tiếng, note cá nhân), tốn nhiều thời gian đọc lại từ đầu
-├── Opportunity B: Việc tự lọc ý chính và tự soạn câu hỏi ôn tập thủ công rất tốn sức (3–4 tiếng/tuần), khiến người học ngại và trì hoãn đến sát kỳ thi mới ôn dồn
-└── Opportunity C: Người học không tự đánh giá được mình đã hiểu đúng trọng tâm bài giảng hay chưa, dễ bỏ sót kiến thức cốt lõi hoặc hiểu sai định lý
+Outcome: Giảm thời gian mỗi thành viên mất cho việc gom, tìm, kiểm và theo dõi thông tin lặp lại mỗi tuần, để dành thời gian cho phần việc chính
+
+ ├── Opportunity A (cluster A): Mất nhiều thời gian gom thông tin từ nhiều nguồn
+ │                              rồi viết lại thành báo cáo cho người khác đọc
+ │
+ ├── Opportunity B (cluster B): Khó tìm đúng thông tin (quyết định cũ, tài liệu, câu trả lời)
+ │                              vì nó nằm rải rác ở nhiều nơi
+ │
+ ├── Opportunity C (cluster C): Bản nháp có thiếu sót mà người viết không tự thấy,
+ │                              người review phải đọc kỹ mới chỉ ra được
+ │
+ └── Opportunity D (cluster D): Sau cuộc họp, nhiều việc cần làm bị quên hoặc rơi mất
+                                vì không ai theo dõi đến cùng
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
+```text
+.Bot tóm tắt họp / tự động viết báo cáo tuần (cluster A): Pain thật là “mất thời gian gom và viết lại”.
 
-- ~~*Xây dựng ứng dụng gia sư ảo AI trò chuyện 24/7*~~ (Solution $\rightarrow$ gạch bỏ)
-- ~~*Hệ thống tự động tóm tắt bài giảng bằng podcast audio*~~ (Solution $\rightarrow$ gạch bỏ)
-- ~~*Plugin tự động giải bài tập và làm quiz hộ sinh viên*~~ (Solution vi phạm liêm chính $\rightarrow$ gạch bỏ)
+.Chatbot hỏi đáp FAQ lab / tìm kiếm thông minh trên Slack, LMS (cluster B): Pain thật là “thông tin rải rác, khó tìm”.
+
+.AI review PRD / tự chấm Problem Statement (cluster C): Pain thật là “thiếu sót không tự phát hiện được”.
+
+.Nhắc deadline tự động / dashboard theo dõi action item (cluster D): Pain thật là “việc bị rơi sau họp”.
+```
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tự động kiểm tra bài Lab với Requirement và Rubric | 5 | 3 | 3 | 5 | 4 | 4 | 3 | **27** |
-| **Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học** | 5 | 4 | 5 | 4 | 4 | 5 | 5 | **32** |
+| Kiểm tra bài Lab với Requirement và Rubric | 5 | 3 | 3 | 5 | 4 | 4 | 3 | **27** |
+| Tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học | 5 | 4 | 5 | 4 | 4 | 5 | 5 | **32** |
 | Đọc hiểu yêu cầu đề bài lab | 5 | 4 | 4 | 4 | 4 | 3 | 5 | **29** |
 | Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
 | Đặt xe và canh app chờ tài xế nhận | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
@@ -208,16 +222,16 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Learner |
+| **Quy trình** | 1. Tham gia buổi học và tiếp nhận kiến thức từ giảng viên. 2. Ghi chú hoặc lưu lại các tài liệu được cung cấp. 3. Sau buổi học, tìm kiếm thêm tài liệu để hiểu rõ những nội dung chưa nắm vững. 4. Đọc lại tài liệu và tổng hợp các kiến thức quan trọng. 5. Tự tạo câu hỏi hoặc bài tập để kiểm tra mức độ hiểu bài. 6. Ôn tập lại kiến thức vào cuối tuần. |
+| **Bottleneck** | Bước 3–5: Phải tự tìm kiếm, đọc và tổng hợp thông tin từ nhiều nguồn, sau đó tự xây dựng nội dung ôn tập. |
+| **Impact** | Tốn nhiều thời gian cho việc tìm kiếm và tổng hợp thay vì tập trung vào thực hành. Kiến thức có thể bị quên nếu không được ôn tập thường xuyên. Người học cũng có thể bỏ sót những nội dung quan trọng hoặc không biết mình đang yếu ở phần kiến thức nào. |
+| **Success Metric** | Thời gian tổng hợp và chuẩn bị tài liệu ôn tập: 4 giờ → dưới 30 phút. Tự động tạo bản tóm tắt kiến thức và bộ câu hỏi sau mỗi buổi học. Nội dung được tạo phải bám sát tài liệu gốc, hướng tới độ chính xác trên 90% qua kiểm tra thủ công. |
+| **Boundary** | **AI không được:** 1. Tự ý bổ sung kiến thức không có trong tài liệu nguồn mà không đánh dấu rõ ràng. 2. Tạo thông tin, công thức, ví dụ hoặc đáp án không có căn cứ. **Con người cần kiểm tra (HITL):** 1. Đối chiếu bản tóm tắt với tài liệu gốc để phát hiện thông tin sai lệch hoặc bị bỏ sót. 2. Kiểm tra tính chính xác và mức độ phù hợp của câu hỏi, bài tập và đáp án được tạo ra. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+- Nhóm đồng ý
 
 ---
 
@@ -225,38 +239,52 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: **Độ mơ hồ cao × Độ phức tạp thấp–trung bình** → Workflow có AI ở một bước là đủ.
 
 Vì sao:
+- **Mơ hồ cao:** một buổi học có nhiều cách tóm tắt và nhiều bộ câu hỏi ôn tập đều chấp nhận được, không có một đáp án đúng duy nhất.
+- **Phức tạp không cao dù có 4 nguồn** (tài liệu, slide, transcript, ghi chú cá nhân):
+  - Cả 4 nguồn **đều có sẵn sau mỗi buổi** và được đưa vào cùng lúc. AI không phải tự đi tìm, không phải quyết định đọc nguồn nào trước.
+  - Phần AI chỉ gồm 2 bước định sẵn (tóm tắt → tạo câu hỏi). Các bước còn lại là script hoặc do người học làm.
+- **Nếu cho AI tự tìm thêm tài liệu trên Internet** (bước 3 trong card gốc) thì nguồn không còn cố định, và bước sau phụ thuộc kết quả tìm kiếm. Khi đó bài toán chuyển hẳn sang ô phức tạp cao. Nhóm chọn **không** giao bước này cho AI.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Template ghi chú Markdown cố định sau mỗi buổi; mỗi thành viên tóm tắt 1 phần rồi chia sẻ cho nhóm; tự làm flashcard | Tài liệu ít; nhóm đều đặn chia việc và làm đúng hạn | Vẫn tốn nhiều thời gian (baseline ~4 giờ); chất lượng không đều giữa các người | Không, đây là cách đang làm |
+| **Rule** | Script gom 4 nguồn của buổi học (tài liệu `docs/*.md`, slide, transcript, ghi chú) vào 1 chỗ; trích heading thành checklist ôn tập; biến bảng "Thuật ngữ" có sẵn thành flashcard | Tài liệu có cấu trúc rõ (heading, bảng thuật ngữ) | Chỉ nhặt được chữ có sẵn; không tóm được ý; không tạo được câu hỏi kiểm tra hiểu | Một phần: dùng cho bước gom tài liệu |
+| **Workflow** | (1) Script gom 4 nguồn của buổi học → (2) AI tóm tắt theo template cố định, mỗi ý ghi nguồn → (3) AI tạo ~10 câu hỏi kèm đáp án có trích nguồn → (4) người học xem lại, gạch câu sai → (5) người học tự làm quiz | Nguồn là 4 loại tài liệu có sẵn của buổi học và đưa được hết cho AI | AI bịa nội dung; tóm tắt hời hợt; người học chỉ đọc tóm tắt thay vì tự học | **Chọn** |
+| **Agent** | AI tự tìm thêm tài liệu trên mạng, tự đoán người học yếu phần nào, tự lặp tạo bài ôn đến khi "đủ" | Cần cá nhân hóa sâu và có dữ liệu kết quả học của từng người | Nguồn không kiểm soát được; khó chấm đầu ra; chi phí cao; quá sức với khóa học chỉ còn vài tuần | Không |
 
-**Mức chọn:**
+**Mức chọn:** Workflow (bước gom tài liệu dùng Rule; bước tóm tắt và tạo câu hỏi dùng AI; bước kiểm tra và tự làm quiz do người học).
 
 **Vì sao không chọn mức đơn giản hơn:**
+- **Rule** chỉ trích được chữ có sẵn trong tài liệu. Nó không tạo được bản tóm tắt ý chính hay câu hỏi kiểm tra hiểu, mà đây chính là bước nghẽn của quy trình hiện tại (đọc, tổng hợp, tự đặt câu hỏi).
+- **No AI** là cách đang làm, mất khoảng 4 giờ mỗi buổi.
+- **Không chọn Agent** vì các bước đã biết trước và cố định, không cần AI tự quyết bước tiếp theo. Agent chỉ thêm rủi ro về nguồn và chi phí.
+- **Ghi chú:** Workflow này có thể **không cần tự build**. Chỉ cần một prompt template cố định dùng với công cụ AI có sẵn. *(Chờ kết quả research CP4 để xác nhận công cụ có sẵn đáp ứng được bao nhiêu.)*
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Bản tóm tắt buổi học theo template cố định và ~10 câu hỏi ôn tập kèm đáp án; mỗi ý, mỗi đáp án có trích nguồn (tên file + mục) |
+| **Judgment** — con người cân nhắc, quyết định gì? | Người học quyết định câu nào sai hoặc thừa, phần nào phải đọc lại tài liệu gốc |
+| **Action** — hành động cuối cùng là gì, ai làm? | Người học tự trả lời quiz và ôn lại phần trả lời sai. AI không trả lời thay, không chấm người học |
+| **Outcome** — đo kết quả bằng gì? | Thời gian chuẩn bị ôn tập (~4 giờ → dưới 30 phút); % ý có trích nguồn đúng; số câu người học phải gạch mỗi buổi |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | 4 nguồn, **đều có sẵn** sau mỗi buổi: tài liệu `docs/*.md` trong repo lab, slide, transcript buổi học, ghi chú cá nhân của người học. Transcript dài (~2 giờ) có thể phải cắt theo từng phần trước khi đưa cho AI |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Câu bị người học gạch (sai/thừa) dùng để sửa prompt template; so sánh câu hỏi AI tạo với câu coach thường hỏi khi chấm |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: *(chờ kết quả phỏng vấn CP4)*.
+  Giả thuyết của nhóm là **augment**: AI làm phần nặng (gom, tóm tắt, tạo câu hỏi), còn người học vẫn tự trả lời câu hỏi, vì đó là lúc học thật. Nếu AI làm hết và người học chỉ đọc bản tóm tắt thì có thể nhanh hơn nhưng nhớ kém hơn.
 - AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+  **Nội dung sai hoặc bịa tệ hơn bỏ sót.** Người học sẽ tin và học sai. Còn nếu AI bỏ sót một khái niệm, tài liệu gốc vẫn còn để đọc. Thiết kế xử lý như sau:
+  - mọi ý tóm tắt và đáp án đều bắt buộc trích nguồn;
+  - ý nào không có trong tài liệu thì đánh dấu "ngoài tài liệu";
+  - người học kiểm tra trước khi dùng hoặc chia sẻ cho nhóm.
 
 ---
 
