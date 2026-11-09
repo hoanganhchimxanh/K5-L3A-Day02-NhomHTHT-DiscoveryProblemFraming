@@ -152,12 +152,12 @@ HIỆN TẠI — 40 phút mỗi lần ôn bài
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
+| Pitch Problem Card | Trình bày 3 Problem Cards của mình: #1 (Đối chiếu quy cách bài lab), #2 (Báo cáo tiến độ tuần cho nhóm đồ án), #3 (Dò tìm bài tập mẫu trong video). | Card #1 được nhóm đánh giá cao vì sát thực tế buổi học hôm nay và hội tụ trực tiếp với bài của Huy Hoàng. |
+| Phản biện bài của bạn khác | **Câu hỏi tôi đã đặt:**<br>1. Hỏi Hoàng Anh (Card #6 - Commit): *"Nỗi đau là do GitHub khó theo dõi hay do thành viên không chịu commit đúng hạn? Một Webhook Discord/Telegram đã giải quyết được chưa mà cần tới AI?"*<br>2. Hỏi Hoàng Anh (Card #5 - Chia việc): *"Nút thắt làm mất 45 phút là lúc nghĩ đầu việc hay lúc đùn đẩy việc khó? AI có giải quyết được tâm lý né việc khó không?"*<br>3. Hỏi Hoàng Anh (Card #4 - Đọc đề): *"Để AI tóm tắt đề, làm sao chắc chắn AI không tóm tắt thiếu các tiêu chí nhỏ trong Rubric khiến cả nhóm bị trừ điểm?"*<br>4. Hỏi Huy Hoàng (Card #1 - Check Rubric): *"AI chấm có khớp với tiêu chí của LabCoach không hay chỉ chấm cảm tính?"* | Giúp nhóm nhận ra bài toán theo dõi commit và chia task thực chất là vấn đề kỷ luật/giao tiếp (chỉ cần Rule/Webhook), không cần AI phức tạp; giúp nhóm hướng sự tập trung vào bài toán kiểm tra Rubric bài lab. |
+| Nhận phản biện | **Câu hỏi tôi nhận được:**<br>Hoàng Anh hỏi: *"Nếu dùng script regex kiểm tra tên file thì đã giải quyết được bao nhiêu % bottleneck?"* | **Tôi đã sửa gì:**<br>Đã phân tách rạch ròi: Script/Rule giải quyết 100% lỗi tên file và thư mục (khoảng 10 phút), còn 15–20 phút nghẽn ở việc đọc đối chiếu nội dung báo cáo với từng tiêu chí Rubric là phần cần AI đọc hiểu ngữ cảnh. Đề xuất nhóm đi theo hướng Workflow kết hợp Rule + AI. |
+| Gom cluster / cây OST | Đề xuất gom Card #1 của tôi và Card #1 của Huy Hoàng vào cụm "Kiểm tra chất lượng & quy cách bài lab"; cùng nhóm xây dựng 3 nhánh Opportunity cho cây OST tập trung vào pain của sinh viên trước giờ nộp bài. | Cây OST của nhóm tách bạch rõ ràng giữa Outcome, Opportunity và loại bỏ hoàn toàn các giải pháp trá hình. |
+| Chọn candidate problem | Cùng nhóm chấm điểm bảng shortlist 5 candidate trên 7 tiêu chí; cân nhắc giữa bài kiểm tra lab và bài tổng hợp tài liệu học tập. | Cả nhóm thống nhất chọn candidate điểm cao nhất (32 điểm): *"Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học"* vì tần suất lặp lại rộng hơn và có impact xuyên suốt kỳ học. |
+| Kiểm chứng / research | Trực tiếp phụ trách phỏng vấn sâu 3 sinh viên theo phương pháp The Mom Test (hỏi hành vi ôn tập trong quá khứ) và làm poll 8 bạn trong lớp; cùng nhóm research 3 công cụ tương tự (NotebookLM, Quizlet, Otter.ai). | Thu được tín hiệu phản bác quan trọng: sinh viên không tin tóm tắt nếu không có trích dẫn nguồn (citation) trang slide. Giúp nhóm thu hẹp problem thành sinh quiz trắc nghiệm kèm dẫn nguồn trực tiếp. |
 | Quy trình nhóm | | |
 | Problem Statement | | |
 | Mức can thiệp AI | | |
@@ -171,7 +171,7 @@ HIỆN TẠI — 40 phút mỗi lần ôn bài
 |---|---|---|---|---|
 | CP1 Scan | Gợi ý thêm các góc nhìn từ lăng kính 'Pain từ người khác' sau khi đã tự scan 8 ý. | Mở rộng góc nhìn sang các đối tượng xung quanh như nhóm trưởng duyệt bài và TA giải đáp thắc mắc. | AI gợi ý một số ý quá rộng, mơ hồ như 'Trợ lý AI quản lý lịch học tập theo cảm xúc'. | Lọc bỏ các ý viển vông; chỉ giữ lại 2 ý có pain thật và tự viết lại theo số liệu đo đạc thực tế của lớp/nhóm. |
 | CP2 Problem Card | Đóng vai Product Manager hoài nghi để phản biện và tìm lỗ hổng trong Problem Card #1. | Chỉ ra điểm yếu: baseline thời gian chưa được đo đạc chặt chẽ, metric '0% lỗi' quá tuyệt đối, và cảnh báo nguy cơ lạm dụng AI khi Rule đã đủ. | AI có xu hướng gợi ý thêm các tính năng phức tạp (Agent tự sửa bài và tự nộp). | Bác bỏ tính năng tự động nộp của AI; giữ vững boundary là Rule chỉ kiểm tra quy cách, con người tự duyệt và tự commit. |
-| CP4 Research | | | | |
+| CP4 Research | Gợi ý các case study / sản phẩm đã giải quyết bài toán tóm tắt bài giảng và tạo quiz ôn tập. | Nhanh chóng đưa ra danh sách các công cụ edtech nổi bật trên thị trường (NotebookLM, Quizlet, Otter). | AI đưa ra một số link bị lỗi 404 hoặc mô tả tính năng chung chung cho cả ChatGPT/Notion. | Tự tay mở kiểm chứng từng link thật (quizlet.com/features/magic-notes, notebooklm.google.com); phân tích sâu vào ranh giới giải quyết từng bước trong quy trình học tập. |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
