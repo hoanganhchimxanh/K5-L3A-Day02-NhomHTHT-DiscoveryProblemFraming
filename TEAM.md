@@ -39,20 +39,25 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- Phụ viết tài liệu tổng (xử lý vài đầu mục cho các CP)
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Thiết kế Opportunity Solution Tree (CP3)
+- Xử lý phần #4 Quy trình trước sau (CP5)
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+| Phần việc | Nội dung | Commit |
+|---|---|---|
+| Thiết kế Opportunity Solution Tree | 2.3. Opportunity Solution Tree (CP3) | 0bcdf24b1a6245485e4e46a78485f8045f98e461 |
+| Xử lý phần #4 Quy trình trước sau | 4. Quy trình trước sau (CP5) | d09f3ca57b2391bd8a5f85c81b4075cf73a28935 |
 
 **Điều mình học được từ phần nhóm:**
 
--
-
+- Luyện tập khả năng phản biện.
+- Tôi nhận ra một số Problem mình đề xuất vẫn mới dừng ở việc mô tả hiện tượng, chưa đào sâu nguyên nhân gốc rễ.
+- Học cách nhìn nhận Problem từ góc độ người dùng thay vì nhanh chóng suy nghĩ đến công nghệ có thể sử dụng để giải quyết nó.
 
 ### VoHuyHoang-2A202603397
 
