@@ -9,8 +9,8 @@
 - Họ tên: Nguyễn Trung Anh
 - MSSV: 2A202603413
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm: 
-- Link repo nhóm: 
+- Tên nhóm: NhomHTHT
+- Link repo nhóm: https://github.com/hoanganhchimxanh/K5-L3A-Day02-NhomHTHT-DiscoveryProblemFraming
 
 ---
 
