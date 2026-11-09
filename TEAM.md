@@ -106,12 +106,13 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Phản biện các card của nhóm bằng 2 câu hỏi: công sức build có đáng không khi khóa học chỉ còn vài tuần, và bài toán đang giải cho nhóm mình hay cho mọi học viên.
 - Chấm điểm shortlist ở CP3.
 - Phản biện Boundary/HITL của Problem Statement v0: đối chiếu toàn bộ bản tóm tắt với tài liệu gốc sẽ làm mất thời gian tiết kiệm được.
-- Viết mục 6: ma trận độ mơ hồ × độ phức tạp, so sánh No AI / Rule / Workflow / Agent, AI Canvas, 2 câu hỏi PAIR. Nhóm chọn mức Workflow.
+- Viết mục 6: ma trận độ mơ hồ × độ phức tạp, so sánh No AI / Rule / Workflow / Agent, AI Canvas, 2 câu hỏi PAIR. Nhóm chọn mức Workflow. Cập nhật mục 6 theo kết quả CP4.
+- Viết mục 7: Problem Statement v1, bảng thay đổi so với v0 và 3 tiêu chí đánh giá đầu ra của AI.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - `group_report.md` mục 2.1 (dòng 7–9: card của tôi), mục 2.4 (bảng chấm điểm).
-- `group_report.md` mục 6, commit `1ac1d66`.
+- `group_report.md` mục 6 (commit `1ac1d66`) và mục 7.
 - Báo cáo cá nhân `report/individual/2A202603413_NguyenTrungAnh.md`, mục 4.
 
 **Điều mình học được từ phần nhóm:**
