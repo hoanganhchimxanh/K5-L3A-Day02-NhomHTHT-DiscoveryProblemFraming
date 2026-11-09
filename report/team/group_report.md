@@ -45,16 +45,31 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: Giảm thời gian và công sức sinh viên cần bỏ ra để chuẩn bị tài liệu ôn tập sau mỗi buổi học, đồng thời đảm bảo kiến thức được tổng hợp đầy đủ, chính xác và dễ sử dụng.
-├── Opportunity A: Khó khăn trong việc thu thập và tổng hợp kiến thức từ nhiều nguồn học liệu khác nhau như slide, ghi chú cá nhân, tài liệu và video bài giảng.
-├── Opportunity B: Khó xác định kiến thức trọng tâm, phân biệt nội dung quan trọng và kiến thức bổ trợ cần ưu tiên ôn tập.
-├── Opportunity C: Mất nhiều thời gian chuyển kiến thức đã học thành tài liệu ôn tập có cấu trúc, dễ đọc và dễ ghi nhớ.
-└── Opportunity D: Khó kiểm tra tính đầy đủ và chính xác của tài liệu ôn tập, lo ngại bỏ sót hoặc sai lệch kiến thức so với bài giảng gốc.
+Outcome: Giảm thời gian mỗi thành viên mất cho việc gom, tìm, kiểm và theo dõi thông tin lặp lại mỗi tuần, để dành thời gian cho phần việc chính
+
+ ├── Opportunity A (cluster A): Mất nhiều thời gian gom thông tin từ nhiều nguồn
+ │                              rồi viết lại thành báo cáo cho người khác đọc
+ │
+ ├── Opportunity B (cluster B): Khó tìm đúng thông tin (quyết định cũ, tài liệu, câu trả lời)
+ │                              vì nó nằm rải rác ở nhiều nơi
+ │
+ ├── Opportunity C (cluster C): Bản nháp có thiếu sót mà người viết không tự thấy,
+ │                              người review phải đọc kỹ mới chỉ ra được
+ │
+ └── Opportunity D (cluster D): Sau cuộc họp, nhiều việc cần làm bị quên hoặc rơi mất
+                                vì không ai theo dõi đến cùng
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-Không
--
+```text
+.Bot tóm tắt họp / tự động viết báo cáo tuần (cluster A): Pain thật là “mất thời gian gom và viết lại”.
+
+.Chatbot hỏi đáp FAQ lab / tìm kiếm thông minh trên Slack, LMS (cluster B): Pain thật là “thông tin rải rác, khó tìm”.
+
+.AI review PRD / tự chấm Problem Statement (cluster C): Pain thật là “thiếu sót không tự phát hiện được”.
+
+.Nhắc deadline tự động / dashboard theo dõi action item (cluster D): Pain thật là “việc bị rơi sau họp”.
+```
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
