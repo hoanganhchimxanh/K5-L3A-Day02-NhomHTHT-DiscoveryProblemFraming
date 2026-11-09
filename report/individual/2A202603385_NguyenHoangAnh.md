@@ -148,30 +148,28 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
+| Pitch Problem Card | Tìm kiếm được 6 Problem và lựa chọn 3 Problem (Problem 4, 5 và 6) để trình bày trong phần báo cáo nhóm. | Đóng góp 3 vấn đề tiềm năng để nhóm thảo luận, đánh giá và lựa chọn hướng giải quyết phù hợp. |
+| Phản biện bài của bạn khác | **Các câu hỏi tôi đã đặt:**<br>- (Pitch 1) AI chấm sai thì ai chịu trách nhiệm? Với những requirement và rubric chung chung, liệu AI có hiểu nhầm yêu cầu không?<br>- (Pitch 3) Log tự điền thì có đáng tin không? Lấy lịch sử sử dụng AI từ đâu khi mỗi công cụ có một cách lưu trữ khác nhau? | Giúp các nhóm làm rõ tính khả thi, độ tin cậy và những rủi ro khi ứng dụng AI vào giải quyết vấn đề. |
+| Nhận phản biện | **Các câu hỏi tôi nhận được:**<br>- Nếu sử dụng AI để giải thích đề bài, làm sao đảm bảo AI không diễn giải sai yêu cầu gốc?<br>- Đề bài lab thường có nhiều ràng buộc ngầm và tiêu chí chấm điểm rất chi tiết (SUBMISSION, RUBRIC). Nếu để AI tóm tắt, làm sao chắc chắn AI không bỏ sót những quy định nhỏ khiến cả nhóm bị trừ điểm?<br>- Và nhiều câu hỏi phản biện khác. | Giúp nhóm nhận diện những rủi ro liên quan đến độ chính xác, tính đầy đủ của thông tin và mức độ đáng tin cậy khi sử dụng AI để hỗ trợ học tập. |
+| Gom cluster / cây OST | Tham gia xây dựng và trình bày cây OST (Opportunity Solution Tree), phân chia Outcome thành các Opportunity và xác định những vấn đề cụ thể cần giải quyết. | Giúp nhóm hệ thống hóa các vấn đề, xác định mối liên hệ giữa Outcome và các Opportunity, từ đó định hướng lựa chọn Problem phù hợp. |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | | |
+| Quy trình nhóm | Xây dựng quy trình hiện tại và quy trình tương lai (phần #4 – CP5). | Làm rõ sự khác biệt giữa quy trình trước và sau khi ứng dụng AI, xác định các bước được tự động hóa, thời gian dự kiến tiết kiệm và những công việc vẫn cần sự kiểm tra của người học. Giúp nhóm đánh giá hiệu quả và tính khả thi của giải pháp đề xuất. |
 | Problem Statement | | |
 | Mức can thiệp AI | | |
 | Quyết định | | |
-
 ---
 
 ## 5. Dùng AI
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan | Sử dụng AI để hỗ trợ tìm kiếm và bổ sung Problem số 6 vào danh sách các vấn đề tiềm năng. | Giúp mở rộng danh sách ý tưởng, gợi ý thêm vấn đề và tiết kiệm thời gian trong quá trình tìm kiếm. | Các gợi ý có thể còn chung chung, chưa phản ánh đầy đủ tình huống thực tế và trải nghiệm của người dùng. | Tự xem xét tính phù hợp của Problem, điều chỉnh nội dung và lựa chọn vấn đề dựa trên trải nghiệm thực tế của bản thân. |
+| CP2 Problem Card | Sử dụng AI để hỗ trợ vẽ và trình bày Problem Card thay vì tự chỉnh sửa, căn chỉnh thủ công. | Giúp tạo card nhanh chóng, trình bày nội dung rõ ràng, tiết kiệm thời gian định dạng và chỉnh sửa. | Bố cục hoặc cách trình bày đôi khi chưa hoàn toàn phù hợp với nội dung mong muốn. | Kiểm tra lại nội dung, điều chỉnh bố cục và đảm bảo card thể hiện đúng Problem, Actor và Bottleneck. |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
 | CP6 Mức can thiệp / quyết định | | | | |
-
 ---
 
 ## 6. Reflection (CP7)
@@ -179,21 +177,28 @@ Quy trình nháp hiện tại:
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Tôi nhận thấy rằng những vấn đề của mình cũng thực tế nhưng một số bottleneck còn rộng và chưa chứng minh sử dụng AI là thực sự cần thiết. Còn các vấn đề của các thành viên khác có bottleneck và quy trình cụ thể hơn, một số vấn đề có đầu vào và tác vụ tự động hóa rõ hơn.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Trong quá trình lọc pitch problems, nhóm cũng từng bị vấn đề này. Nhưng sau khi chọn xong và kiểm lại, thành viên đã nhận ra lỗi và sửa lại.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Ở problem pitch số 6: "Kiểm tra tiến độ commit của thành viên theo branch", Tuyên đã phản biện vấn đề của tôi: "GitHub đã có sẵn tab Network Graph, và chỉ cần một Webhook/GitHub Action gửi thông báo về Discord/Telegram mỗi khi có commit mới là xong. Tại sao lại cần AI?"
+
+=> Tôi nhận ra nếu chỉ kiểm tra commit thì AI không cần thiết.
+=> Số lượng commit chưa thể nói lên chất lượng code của thành viên mà phải là tiến độ thực chất.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Kết quả kiểm chứng không làm tôi bất ngờ, vì vấn đề khá gần gũi thực tế.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Theo như tôi thấy, để tìm được một Problem Statement là rất mất thời gian. Vì cả nhóm phải bỏ đi những ý tưởng chung chung hoặc những solution. Thay vào đó là tập trung tìm những vấn đề cụ thể, thực tế và có thể kiểm chứng, rồi vote cho vấn đề ổn nhất. Còn về viết Problem Statement, khó nhất là xác định được nỗi đau của người dùng và tìm dữ liệu.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu được làm lại, tôi sẽ phản biện vấn đề mọi người rõ ràng hơn. Chuyển từ "AI có sai không?" sang "Bạn đã xác định được nguyên nhân gây ra vấn đề chưa, hay mới chỉ mô tả biểu hiện bên ngoài?"
+
+=> Đào sâu vào vấn đề (problem) đang thảo luận thay vì vội hỏi về cách áp dụng AI.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
 ---
-
-## 7. Tài liệu tham khảo
-
--
