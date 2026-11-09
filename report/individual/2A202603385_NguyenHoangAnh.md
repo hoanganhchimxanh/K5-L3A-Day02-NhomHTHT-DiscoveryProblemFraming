@@ -154,7 +154,7 @@ Quy trình nháp hiện tại:
 | Gom cluster / cây OST | Tham gia xây dựng và trình bày cây OST (Opportunity Solution Tree), phân chia Outcome thành các Opportunity và xác định những vấn đề cụ thể cần giải quyết. | Giúp nhóm hệ thống hóa các vấn đề, xác định mối liên hệ giữa Outcome và các Opportunity, từ đó định hướng lựa chọn Problem phù hợp. |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | | |
+| Quy trình nhóm | Xây dựng quy trình hiện tại và quy trình tương lai (phần #4 – CP5). | Làm rõ sự khác biệt giữa quy trình trước và sau khi ứng dụng AI, xác định các bước được tự động hóa, thời gian dự kiến tiết kiệm và những công việc vẫn cần sự kiểm tra của người học. Giúp nhóm đánh giá hiệu quả và tính khả thi của giải pháp đề xuất. |
 | Problem Statement | | |
 | Mức can thiệp AI | | |
 | Quyết định | | |
@@ -189,7 +189,7 @@ Trong quá trình lọc pitch problems, nhóm cũng từng bị vấn đề này
 => Số lượng commit chưa thể nói lên chất lượng code của thành viên mà phải là tiến độ thực chất.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Kết quả kiểm chứng không làm tôi bất ngờ, vì vấn đề khá gần gũi thực tế.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 Theo như tôi thấy, để tìm được một Problem Statement là rất mất thời gian. Vì cả nhóm phải bỏ đi những ý tưởng chung chung hoặc những solution. Thay vào đó là tập trung tìm những vấn đề cụ thể, thực tế và có thể kiểm chứng, rồi vote cho vấn đề ổn nhất. Còn về viết Problem Statement, khó nhất là xác định được nỗi đau của người dùng và tìm dữ liệu.
@@ -202,7 +202,3 @@ Nếu được làm lại, tôi sẽ phản biện vấn đề mọi người r�
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
 ---
-
-## 7. Tài liệu tham khảo
-
--
