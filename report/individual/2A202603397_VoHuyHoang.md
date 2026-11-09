@@ -37,84 +37,154 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Tự động kiểm tra bài Lab với Requirement và Rubric (#8) | Tốn thời gian, có baseline thật | Chưa xác định AI có thể kiểm tra chính xác đến mức nào và liệu kết quả đánh giá có khớp với LabCoach hay không. |
+| 2 | Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học (#7) | Tốn thời gian, nhiều người gặp | Kiến thức AI tổng hợp có thể quá rộng hoặc quá ít |
+| 3 | Tự đồng điền file AI-Logs.md (#1) | Tốn thời gian, nhiều người gặp | AI có thể điền quá chi tiết làm file quá dài |
+
+### Problem Card #8
+
+| Trường | Nội dung |
+|---|---|
+| Job Story | Khi hoàn thành 1 bài Lab, tôi muốn bài làm của mình được kiểm tra tự động với file Requirement và Rubric để có thể phát hiện lỗi và sửa sớm |
+| Actor | Student, Học viên AI thực chiến |
+| Thời điểm / bối cảnh | Sau khi hoàn thành bài Lab và trước khi submit bài làm. Người học cần kiểm tra xem bài làm đã đáp ứng đầy đủ các yêu cầu và tiêu chí đánh giá hay chưa. |
+| Quy trình hiện tại | 1. Hoàn thành bài Lab theo hướng dẫn.  2. Mở các file Requirement và Documentation để xem lại yêu cầu. 3. Đọc file Rubric để hiểu các tiêu chí chấm điểm. 4. Đối chiếu từng yêu cầu với kết quả bài làm. 5. Phát hiện những phần còn thiếu hoặc chưa đúng. 6. Chỉnh sửa bài làm và kiểm tra lại trước khi nộp.|
+| Bottleneck | Bước 2–4: Phải đọc nhiều tài liệu và đối chiếu thủ công giữa bài làm, Requirement và Rubric. Khoảng 1 giờ để kiểm tra Rubric và chỉnh sửa lại bài làm.|
+| Impact | Tốn nhiều thời gian review thủ công, dễ bỏ sót yêu cầu quan trọng, có thể nộp bài chưa hoàn chỉnh hoặc không đạt một số tiêu chí trong Rubric. |
+| Success metric | Thời gian kiểm tra bài: 60 phút → dưới 15 phút. Tỷ lệ phát hiện các lỗi/requirements bị thiếu trước khi submit: hướng tới trên 90% trên tập test được xác minh thủ công. Có báo cáo trạng thái cho từng tiêu chí: đạt / chưa đạt / cần kiểm tra. |
+| Phương án không dùng AI | Xây dựng checklist hoặc form checklist dựa trên Requirement và Rubric. Người học tự đánh dấu từng tiêu chí sau khi kiểm tra bài làm. |
+| Giả thuyết về AI | AI có thể đọc và phân tích các file Requirement, Documentation, Rubric cùng với bài làm của người học. Sau đó, AI tự động đối chiếu từng tiêu chí, xác định nội dung còn thiếu, phát hiện những điểm chưa phù hợp và đưa ra gợi ý chỉnh sửa cụ thể. Kết quả được trình bày dưới dạng báo cáo checklist kèm bằng chứng từ bài làm. |
+| Cảm nhận nhanh | Agent |
+
+Quy trình nháp hiện tại:
+
+```text
+[Hoàn thành bài Lab]
+          |
+          v
+[Mở file Requirement / Documentation]
+          |
+          v
+[Đọc file Rubric]
+          |
+          v
+[Đối chiếu thủ công bài làm với từng tiêu chí]
+          |
+          v
+[Phát hiện lỗi hoặc yêu cầu còn thiếu]
+          |
+          v
+[Chỉnh sửa bài làm]
+          |
+          v
+[Kiểm tra lại toàn bộ]
+          |
+          v
+[Submit bài Lab]
+```
+
+### Problem Card #7
+
+| Trường | Nội dung |
+|---|---|
+| Job Story | Khi xong 1 buổi học, tôi muốn các kiến thức và bài ôn tập được tổng hợp và tạo tự động để dễ dàng ôn tập kiến thức |
+| Actor | Learner |
+| Thời điểm / bối cảnh | Sau mỗi buổi học hoặc cuối ngày học. Người học cần hệ thống hóa kiến thức vừa tiếp thu để ghi nhớ lâu hơn và chuẩn bị cho các buổi học tiếp theo. |
+| Quy trình hiện tại | 1. Tham gia buổi học và tiếp nhận kiến thức từ giảng viên. 2. Ghi chú hoặc lưu lại các tài liệu được cung cấp. 3. Sau buổi học, tìm kiếm thêm tài liệu để hiểu rõ những nội dung chưa nắm vững. 4. Đọc lại tài liệu và tổng hợp các kiến thức quan trọng. 5. Tự tạo câu hỏi hoặc bài tập để kiểm tra mức độ hiểu bài. 6. Ôn tập lại kiến thức vào cuối tuần. |
+| Bottleneck | Bước 3–5: Phải tự tìm kiếm, đọc và tổng hợp thông tin từ nhiều nguồn, sau đó tự xây dựng nội dung ôn tập. |
+| Impact | Tốn nhiều thời gian cho việc tìm kiếm và tổng hợp thay vì tập trung vào thực hành. Kiến thức có thể bị quên nếu không được ôn tập thường xuyên. Người học cũng có thể bỏ sót những nội dung quan trọng hoặc không biết mình đang yếu ở phần kiến thức nào. |
+| Success metric | Thời gian tổng hợp và chuẩn bị tài liệu ôn tập: 4 giờ → dưới 30 phút. Tự động tạo bản tóm tắt kiến thức và bộ câu hỏi sau mỗi buổi học. Nội dung được tạo phải bám sát tài liệu gốc, hướng tới độ chính xác trên 90% qua kiểm tra thủ công.|
+| Phương án không dùng AI | Sử dụng template ghi chú cố định như Notion hoặc Markdown để lưu lại kiến thức sau mỗi buổi học. Chuẩn bị sẵn checklist các chủ đề cần ôn tập và sử dụng flashcard hoặc câu hỏi trắc nghiệm được tạo thủ công. |
+| Giả thuyết về AI | AI có thể đọc slide, tài liệu Markdown, ghi chú hoặc transcript của buổi học để tự động tổng hợp kiến thức quan trọng. Từ nội dung đó, AI tạo mindmap, flashcards, câu hỏi trắc nghiệm và bài tập thực hành theo từng chủ đề. AI cũng có thể phân loại nội dung theo mức độ khó và đề xuất những kiến thức cần ưu tiên ôn tập. |
+| Cảm nhận nhanh | Workflow |
+
+Quy trình nháp hiện tại:
+
+```text
+[Bắt đầu buổi học]
+        |
+        v
+[Tiếp nhận kiến thức từ giảng viên]
+        |
+        v
+[Ghi chú và lưu tài liệu]
+        |
+        v
+[Kết thúc buổi học]
+        |
+        v
+[Tìm kiếm thêm tài liệu trên Internet]
+        |
+        v
+[Đọc và tổng hợp kiến thức]
+        |
+        v
+[Tự tạo câu hỏi và bài tập ôn tập]
+        |
+        v
+[Ôn tập lại vào cuối tuần]
+```
 
 ### Problem Card #1
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi làm Labs, tôi muốn file AI-Logs.md sẽ tự động cập nhật để tôi không phải tự viết tay |
+| Actor | Learner, LabCoach |
+| Thời điểm / bối cảnh | Trong và sau quá trình thực hiện mỗi bài Lab, đặc biệt khi sử dụng AI để hỗ trợ giải quyết các yêu cầu, viết code, phân tích hoặc tìm kiếm thông tin. |
+| Quy trình hiện tại | 1. Đọc yêu cầu của bài Lab. 2. Sử dụng AI để hỏi đáp, giải thích hoặc hỗ trợ thực hiện các task. 3. Kiểm tra và đánh giá câu trả lời của AI. 4. Ghi nhớ những lần tương tác với AI. 5. Cuối buổi, mở file AI-Logs.md. 6. Viết lại các yêu cầu đã gửi, kết quả AI trả về, những lỗi AI mắc phải và cách bản thân kiểm chứng hoặc chỉnh sửa. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4–6: Phải nhớ lại các tương tác trước đó, chọn lọc thông tin quan trọng và trình bày lại theo đúng cấu trúc Markdown (~15-20p để check lại và điền). |
+| Impact | Tốn thời gian ghi chép thủ công, dễ quên các lần tương tác hoặc bỏ sót những lỗi AI đã mắc phải. AI Logs có thể không đầy đủ, làm giảm khả năng đánh giá hiệu quả sử dụng AI và rút kinh nghiệm sau mỗi bài Lab. |
+| Success metric | Thời gian cập nhật AI Logs: 15–20 phút → dưới 5 phút. Tỷ lệ ghi nhận các tương tác AI quan trọng: hướng tới trên 90% qua đối chiếu thủ công. File AI-Logs.md được cập nhật đúng cấu trúc Markdown và không mất dữ liệu cũ. |
+| Phương án không dùng AI | Sử dụng template Markdown cố định để ghi lại từng lần tương tác. Có thể viết script hoặc browser extension để lưu prompt và response vào file log, sau đó người dùng tự phân loại và bổ sung phần đánh giá. |
+| Giả thuyết về AI | AI có thể thu thập lịch sử tương tác, tự động phân loại theo từng giai đoạn Lab và tổng hợp thành các mục trong AI-Logs.md, bao gồm yêu cầu gửi cho AI, kết quả nhận được, vấn đề phát sinh, mức độ tin cậy và cách người học kiểm chứng hoặc chỉnh sửa. Người học chỉ cần review và xác nhận nội dung trước khi lưu. |
+| Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
 
 ```text
-
-```
-
-### Problem Card #2
-
-| Trường | Nội dung |
-|---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
-
-Quy trình nháp hiện tại:
-
-```text
-
-```
-
-### Problem Card #3
-
-| Trường | Nội dung |
-|---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
-
-Quy trình nháp hiện tại:
-
-```text
-
+[Bắt đầu làm Lab]
+        |
+        v
+[Đọc Lab Requirements]
+        |
+        v
+[Sử dụng AI hỗ trợ thực hiện Lab]
+        |
+        v
+[Kiểm tra kết quả AI trả về]
+        |
+        v
+[Tiếp tục thực hiện các task]
+        |
+        v
+[Kết thúc Lab]
+        |
+        v
+[Nhớ lại/Xem lại lịch sử các lần tương tác với AI]
+        |
+        v
+[Viết thủ công vào AI-Logs.md]
+        |
+        v
+[Kiểm tra và hoàn thiện AI Logs]
 ```
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
+- Card số: #8 - Tự động kiểm tra bài Lab với Requirement và Rubric
+- Vì sao: Đây là vấn đề tôi đã trực tiếp gặp khi thực hiện MiniLab 2. Tôi mất khoảng 1 giờ để kiểm tra Rubric và chỉnh sửa bài làm. Giải pháp có thể giúp tiết kiệm thời gian, phát hiện những yêu cầu còn thiếu và giảm nguy cơ nộp bài chưa hoàn chỉnh. Ngoài ra, bài toán có đầu vào và đầu ra rõ ràng, có thể kết hợp Rule-based và AI để xây dựng MVP và đo lường hiệu quả thực tế.
 - Câu hỏi muốn nhóm phản biện:
+    1. Liệu AI có thể đánh giá chính xác mức độ đáp ứng của bài làm so với Requirement và Rubric không? 
+    2. Nên sử dụng AI hoàn toàn hay kết hợp AI với Rule-based để đảm bảo kết quả đáng tin cậy?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| AI có thể đưa ra giải pháp quá rộng, chưa xác định rõ phạm vi MVP | Đồng ý | Giới hạn MVP vào việc đọc Requirement, đối chiếu Rubric và tạo báo cáo lỗi. |
+| Success metric chưa có cơ sở kiểm chứng | Đồng ý | Bổ sung baseline 60 phút và target dưới 15 phút; xác định cần thử nghiệm để kiểm chứng. |
+| AI có thể tự suy diễn thông tin khi tài liệu không đầy đủ | Đồng ý | Yêu cầu AI trích dẫn bằng chứng từ bài làm và đánh dấu Needs Review khi chưa đủ căn cứ. |
 
 ---
 
@@ -139,8 +209,8 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
+| CP1 Scan | Gợi ý problem 7 + 8 | Gợi ý cho tôi ý tưởng hợp lý | Một vài ý tưởng từ AI hơi mơ hồ và không khớp với thực tế bản thân tôi | Thêm problem 7 và 8 |
+| CP2 Problem Card | Vẽ quy trình khi có AI cho các problem | Gợi ý workflow hợp lý khi áp dụng AI | Một số bước không hợp lý ở thực tế | Sửa lại cho hợp lý các workflow |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
