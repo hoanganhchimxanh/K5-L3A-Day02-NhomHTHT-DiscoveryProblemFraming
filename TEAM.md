@@ -5,7 +5,7 @@
 ## Thông tin nhóm
 
 - Tên nhóm: NhomHTHT
-- Candidate problem nhóm chọn (1 câu):
+- Candidate problem nhóm chọn (1 câu): Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên

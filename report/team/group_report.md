@@ -7,7 +7,7 @@
 
 - Tên nhóm: NhomHTHT
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -35,10 +35,10 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A — Báo cáo / tổng hợp | Báo cáo tuần, recap họp, báo cáo tiến độ lab | Gom thông tin nhiều nguồn rồi viết lại cho người khác đọc |
-| B — Tìm kiếm | Tìm quyết định cũ trong Slack, tìm tài liệu trên LMS, FAQ lab | Tìm đúng thông tin trong nhiều nguồn rời rạc |
-| C — Review | Review PRD, kiểm Problem Statement, review bài tập | Đọc bản nháp và chỉ ra thiếu sót |
-| D — Theo dõi việc | Theo dõi action item, nhắc deadline | Sau cuộc họp nhiều việc bị rơi |
+| A — Báo cáo / tổng hợp |  Tổng hợp kiến thức và tạo tài liệu ôn tập, Điền file AI-Logs.md, Đọc hiểu yêu cầu đề bài lab, Báo cáo tiến độ tuần | Gom và tổng hợp thông tin viết báo cáo |
+| B — Tìm kiếm | Đặt xe và canh app chờ tài xế nhận, Theo dõi hàng trên đường, Đặt xe máy cho rẻ nhưng không ai nhận | Tìm đúng thông tin |
+| C — Review | Kiểm tra bài Lab với Requirement và Rubric, Đối chiếu quy cách bài lab | Đọc source, so sánh và chỉ ra sai sót |
+| D — Theo dõi việc | Phân chia công việc, Kiểm tra tiến độ commit, Dò tìm bài tập mẫu | Tổng hợp thông tin từ Git |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
@@ -65,13 +65,11 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | Đặt xe máy cho rẻ nhưng không ai nhận, phải trả thêm hoặc đổi xe | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
 | Đặt xe và canh app chờ tài xế nhận | 5 | 4 | 5 | 3 | 2 | 2 | 3 | **24** |
 
-**Candidate được chọn:**
+**Candidate được chọn:** Tự động kiểm tra bài Lab với Requirement và Rubric
 
-**Vì sao chọn:**
+**Vì sao chọn:** Phù hợp với domain của nhóm và cũng là Pain của tất cả các thành viên
 
-**Vì sao loại các candidate còn lại:**
-
-**Xử lý bất đồng (nếu có):**
+**Vì sao loại các candidate còn lại:** Đề tài số 4 + 5 không phù hợp domain, đề tài số 1 AI có thể sai sót dẫn đến thiếu thông tin và đề tài 3 có thể không cần dùng đến AI
 
 ---
 
@@ -169,16 +167,16 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Learner |
+| **Quy trình** | 1. Tham gia buổi học và tiếp nhận kiến thức từ giảng viên. 2. Ghi chú hoặc lưu lại các tài liệu được cung cấp. 3. Sau buổi học, tìm kiếm thêm tài liệu để hiểu rõ những nội dung chưa nắm vững. 4. Đọc lại tài liệu và tổng hợp các kiến thức quan trọng. 5. Tự tạo câu hỏi hoặc bài tập để kiểm tra mức độ hiểu bài. 6. Ôn tập lại kiến thức vào cuối tuần. |
+| **Bottleneck** | Bước 3–5: Phải tự tìm kiếm, đọc và tổng hợp thông tin từ nhiều nguồn, sau đó tự xây dựng nội dung ôn tập. |
+| **Impact** | Tốn nhiều thời gian cho việc tìm kiếm và tổng hợp thay vì tập trung vào thực hành. Kiến thức có thể bị quên nếu không được ôn tập thường xuyên. Người học cũng có thể bỏ sót những nội dung quan trọng hoặc không biết mình đang yếu ở phần kiến thức nào. |
+| **Success Metric** | Thời gian tổng hợp và chuẩn bị tài liệu ôn tập: 4 giờ → dưới 30 phút. Tự động tạo bản tóm tắt kiến thức và bộ câu hỏi sau mỗi buổi học. Nội dung được tạo phải bám sát tài liệu gốc, hướng tới độ chính xác trên 90% qua kiểm tra thủ công. |
+| **Boundary** | **AI không được:** 1. Tự ý bổ sung kiến thức không có trong tài liệu nguồn mà không đánh dấu rõ ràng. 2. Tạo thông tin, công thức, ví dụ hoặc đáp án không có căn cứ. **Con người cần kiểm tra (HITL):** 1. Đối chiếu bản tóm tắt với tài liệu gốc để phát hiện thông tin sai lệch hoặc bị bỏ sót. 2. Kiểm tra tính chính xác và mức độ phù hợp của câu hỏi, bài tập và đáp án được tạo ra. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
--
+- Nhóm đồng ý
 
 ---
 
