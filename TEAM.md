@@ -12,10 +12,10 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Nguyễn Hoàng Anh | 2A202603385 | | https://github.com/hoanganhchimxanh |
-| 2 | Võ Huy Hoàng | 2A202603397 | | https://github.com/ferr2764 |
-| 3 | Nguyễn Trung Anh | 2A202603413 | | https://github.com/Rising-Apocalypse |
-| 4 | Dương Ngọc Tuyên | 2A202603511 | | https://github.com/tuyenboy198 |
+| 1 | Nguyễn Hoàng Anh | 2A202603385 | Vẽ quy trình | https://github.com/hoanganhchimxanh |
+| 2 | Võ Huy Hoàng | 2A202603397 | Ghi chép, Viết Problem Statement | https://github.com/ferr2764 |
+| 3 | Nguyễn Trung Anh | 2A202603413 | Người phản biện chính | https://github.com/Rising-Apocalypse |
+| 4 | Dương Ngọc Tuyên | 2A202603511 | Phụ trách kiểm chứng | https://github.com/tuyenboy198 |
 
 Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối thời gian, ghi chép, người phản biện chính, phụ trách kiểm chứng (phỏng vấn/survey), phụ trách research, vẽ quy trình, viết Problem Statement.
 

@@ -39,7 +39,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 |---:|---|---|---|
 | 1 | Tự động kiểm tra bài Lab với Requirement và Rubric (#8) | Tốn thời gian, có baseline thật | Chưa xác định AI có thể kiểm tra chính xác đến mức nào và liệu kết quả đánh giá có khớp với LabCoach hay không. |
 | 2 | Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học (#7) | Tốn thời gian, nhiều người gặp | Kiến thức AI tổng hợp có thể quá rộng hoặc quá ít |
-| 3 | Tự đồng điền file AI-Logs.md (#1) | Tốn thời gian, nhiều người gặp | AI có thể điền quá chi tiết làm file quá dài |
+| 3 | Tự động điền file AI-Logs.md (#1) | Tốn thời gian, nhiều người gặp | AI có thể điền quá chi tiết làm file quá dài |
 
 ### Problem Card #8
 

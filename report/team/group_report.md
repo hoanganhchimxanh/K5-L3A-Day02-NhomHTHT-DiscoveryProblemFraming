@@ -18,18 +18,18 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 1 | Võ Huy Hoàng | Tự động kiểm tra bài Lab với Requirement và Rubric | Student | | |
+| 2 | Võ Huy Hoàng | Tự động tổng hợp kiến thức và tạo tài liệu ôn tập sau buổi học | Student | | |
+| 3 | Võ Huy Hoàng | Tự động điền file AI-Logs.md | Student, LabCoach | | |
+| 4 | Nguyễn Hoàng Anh | Đọc hiểu yêu cầu đề bài lab | Học viên (cá nhân và trưởng nhóm) | | |
+| 5 | Nguyễn Hoàng Anh | Phân chia công việc cho thành viên nhóm | Trưởng nhóm | | |
+| 6 | Nguyễn Hoàng Anh | Kiểm tra tiến độ commit của thành viên theo branch | Trưởng nhóm | | |
+| 7 | Nguyễn Trung Anh | | | | |
+| 8 | Nguyễn Trung Anh | | | | |
+| 9 | Nguyễn Trung Anh | | | | |
+| 10 | Dương Ngọc Tuyên | Đối chiếu quy cách bài lab trước khi nộp | Sinh viên đang làm bài lab môn học | | |
+| 11 | Dương Ngọc Tuyên | Báo cáo tiến độ tuần cho nhóm đồ án | Thành viên phụ trách tổng hợp báo cáo tuần của nhóm đồ án | | |
+| 12 | Dương Ngọc Tuyên | Dò tìm bài tập mẫu trong video bài giảng | Sinh viên tự học, tự ôn tập bài tập lớn | | |
 
 ### 2.2. Cluster
 
