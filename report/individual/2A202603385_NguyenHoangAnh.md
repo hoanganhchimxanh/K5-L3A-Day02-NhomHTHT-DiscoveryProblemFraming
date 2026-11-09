@@ -15,8 +15,6 @@
 
 ## 2. Scan problem (CP1)
 
-## CP1 — Scan 5+ problems (Discover)
-
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
@@ -40,84 +38,109 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Đọc hiểu yêu cầu đề bài lab | Xảy ra ngay từ đầu mỗi buổi học, ảnh hưởng toàn bộ hướng làm bài — hiểu sai là mất công làm lại. Gần gũi, thiết thực, ai cũng gặp. | Liệu thời gian đọc lâu là do đề viết phức tạp hay do bản thân chưa có kỹ năng đọc nhanh? |
+| 2 | Phân chia công việc cho thành viên nhóm | Xảy ra mỗi sprint, dễ dẫn đến trùng việc/bỏ sót, là pain point rõ của vai trò trưởng nhóm. Thiết thực với mọi dự án nhóm. | Mỗi nhóm có cấu trúc khác nhau — liệu giải pháp có áp dụng chung được không? |
+| 3 | Kiểm tra tiến độ commit của thành viên theo branch | Lặp lại 1–2 lần/ngày, đo được rõ (70–140 phút/tuần), ảnh hưởng trực tiếp đến kết quả nộp bài của cả nhóm. | Liệu vấn đề do thiếu công cụ tổng hợp hay do thành viên thiếu kỷ luật commit đúng hạn? |
 
-### Problem Card #1
+### Problem Card #1 — Đọc hiểu yêu cầu đề bài
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi nhận đề bài lab nhóm hoặc lab cá nhân, tôi muốn nắm rõ toàn bộ yêu cầu, ràng buộc và tiêu chí chấm điểm trong thời gian ngắn, để không hiểu sai hướng làm bài và phải làm lại từ đầu. |
+| Actor | Học viên (cá nhân và trưởng nhóm) |
+| Thời điểm / bối cảnh | Ngay khi nhận đề bài mỗi buổi học/lab mới; thường gặp áp lực thời gian vì cần phân công công việc ngay sau đó. |
+| Quy trình hiện tại (3–7 bước) | 1. Mở file đề bài → 2. Đọc lướt toàn bộ (~5 phút) → 3. Đọc kỹ từng mục (~15–30 phút) → 4. Gặp thuật ngữ lạ → tra Google → đọc 3–5 trang → 5. Quay lại đề đọc lại để hiểu trong ngữ cảnh → 6. Hỏi giảng viên hoặc bạn bè xác nhận hiểu đúng không |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3–5: đọc đi đọc lại 2–3 lần mất 20–40 phút; bước 4 (tra thuật ngữ) mất thêm 15–30 phút mỗi lần gặp khái niệm lạ. |
+| Impact (nếu không giải thì sao) | Hiểu sai yêu cầu → làm sai hướng → mất toàn bộ công sức → trễ deadline hoặc điểm thấp; trưởng nhóm hiểu sai → phân công sai → cả nhóm bị ảnh hưởng. |
+| Success metric (baseline → target) | Baseline: 20–40 phút đọc + 15–30 phút tra cứu/lần. Target: nắm đủ yêu cầu chính xác trong dưới 10 phút; giảm số lần phải đọc lại xuống còn 1 lần. |
+| Phương án không dùng AI | Tạo checklist chuẩn các câu hỏi cần trả lời sau khi đọc đề (Mục tiêu là gì? Sản phẩm nộp là gì? Tiêu chí chấm điểm? Hạn nộp?); dùng highlight màu theo loại thông tin. |
+| Giả thuyết về AI (nếu có) | Dán nội dung đề bài vào → AI tóm tắt dạng bullet: mục tiêu, yêu cầu bắt buộc, tiêu chí chấm, hạn nộp, thuật ngữ cần biết → đọc tóm tắt thay vì đọc toàn bộ từ đầu. |
+| Cảm nhận nhanh | Workflow / Rule |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Học viên / Trưởng nhóm]
+  → Nhận file đề bài (PDF / .md / Google Doc)
+  → Đọc lướt toàn bộ (~5 phút)
+  → Đọc kỹ từng mục (~15–30 phút)
+      ↳ Gặp thuật ngữ lạ → mở tab mới → Google → đọc 3–5 trang → quay lại
+  → Đọc lại lần 2–3 để chắc chắn không bỏ sót (~10 phút)
+  → Hỏi giảng viên / bạn bè xác nhận
+  → Bắt đầu phân công hoặc làm bài
+(Tổng: 35–70 phút; rủi ro vẫn hiểu sai một số tiêu chí nhỏ)
 ```
 
-### Problem Card #2
+### Problem Card #2 — Phân chia công việc cho thành viên nhóm
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi nhóm bắt đầu một lab mới và cần phân chia công việc, tôi muốn xác định nhanh phần việc nào phù hợp với từng thành viên dựa trên năng lực và khối lượng hiện tại, để tránh tình trạng trùng việc, bỏ sót phần, hoặc một người ôm quá nhiều. |
+| Actor | Trưởng nhóm |
+| Thời điểm / bối cảnh | Đầu mỗi sprint/lab khi nhận yêu cầu mới; thường diễn ra qua nhóm chat hoặc họp nhanh online. |
+| Quy trình hiện tại (3–7 bước) | 1. Đọc lại toàn bộ yêu cầu đề bài → 2. Liệt kê các phần việc cần làm → 3. Ước lượng khối lượng từng phần (cảm tính) → 4. Trao đổi/thảo luận trong nhóm chat → 5. Phân công → 6. Chỉnh sửa nếu có phản đối hoặc không ai nhận phần khó |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3–5: mất 20–45 phút; thường có tranh luận hoặc không ai tự nguyện nhận phần khó; đã xảy ra 1 lần trùng việc giữa 2 thành viên. |
+| Impact (nếu không giải thì sao) | Trùng việc → lãng phí effort; bỏ sót → thiếu phần trong báo cáo → điểm bị trừ; phân công không đều → 1 người kiệt sức, người kia làm quá ít. |
+| Success metric (baseline → target) | Baseline: 20–45 phút/lần phân công, 1–2 lần trùng/bỏ sót mỗi kỳ. Target: dưới 10 phút/lần, 0 lần trùng hoặc bỏ sót phần việc. |
+| Phương án không dùng AI | Dùng template Kanban board cố định (Trello hoặc Notion) với các cột mặc định cho từng lab; mỗi thành viên tự kéo card vào tên mình. |
+| Giả thuyết về AI (nếu có) | Phân tích nội dung đề bài → tự động liệt kê và phân nhóm phần việc → đề xuất phân công dựa trên số thành viên và vai trò; trưởng nhóm chỉ cần duyệt. |
+| Cảm nhận nhanh | Workflow |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Trưởng nhóm]
+  → Đọc yêu cầu đề bài (toàn bộ)
+  → Tự liệt kê phần việc (không có template chuẩn)
+  → Ước lượng khối lượng (cảm tính)
+  → Đăng lên nhóm chat → chờ phản hồi
+  → Thương lượng ai làm gì (~20–45 phút)
+  → Chốt phân công → ghi vào nhóm chat
+(Rủi ro: trùng việc, bỏ sót, không có hồ sơ rõ ràng)
 ```
 
-### Problem Card #3
+### Problem Card #3 — Kiểm tra tiến độ commit của thành viên theo branch
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi là trưởng nhóm cần kiểm tra tiến độ nộp bài, tôi muốn nhanh chóng nắm được trạng thái commit của từng thành viên trên branch cá nhân mà không phải vào thủ công từng branch, để phát hiện sớm phần thiếu hoặc sai và có thể nhắc nhở kịp thời trước deadline. |
+| Actor | Trưởng nhóm |
+| Thời điểm / bối cảnh | Trong tuần làm bài lab nhóm, đặc biệt 2–3 ngày trước deadline; mỗi ngày phải kiểm tra 1–2 lần. |
+| Quy trình hiện tại (3–7 bước) | 1. Mở GitHub repo → 2. Chọn từng branch của thành viên → 3. Vào tab "Commits" → 4. Đọc commit message và file thay đổi → 5. So sánh với yêu cầu đề bài → 6. Ghi chú thủ công → 7. Nhắn tin riêng nhắc nhở từng người |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–6: phải lặp lại cho từng thành viên (4–5 người), mỗi lần mất 10–20 phút; tổng 70–140 phút/tuần. |
+| Impact (nếu không giải thì sao) | Phát hiện thiếu bài muộn → không còn thời gian nhắc/sửa → điểm nhóm bị trừ hoặc thành viên thiếu phần đóng góp. |
+| Success metric (baseline → target) | Baseline: 70–140 phút/tuần review thủ công. Target: dưới 20 phút/tuần; phát hiện phần thiếu trước 24h so với deadline. |
+| Phương án không dùng AI | Tạo Google Sheet shared, yêu cầu mỗi thành viên tự cập nhật trạng thái (Done / In Progress / Not started) theo ngày; trưởng nhóm chỉ cần mở 1 file. |
+| Giả thuyết về AI (nếu có) | Script tự động tổng hợp commit log từ tất cả branch trong repo → tạo bảng tóm tắt (tên người, file đã thay đổi, thời gian commit gần nhất) → gửi thông báo tóm tắt mỗi ngày. |
+| Cảm nhận nhanh | Workflow / Agent |
 
 Quy trình nháp hiện tại:
 
 ```text
-
+[Trưởng nhóm]
+  → Mở GitHub repo
+  → Branch: member_A → xem commit → ghi chú
+  → Branch: member_B → xem commit → ghi chú
+  → Branch: member_C → xem commit → ghi chú
+  → Branch: member_D → xem commit → ghi chú
+  → So sánh với checklist yêu cầu đề bài
+  → Nhắn tin riêng từng người còn thiếu
+(Lặp lại 1–2 lần/ngày trong tuần nộp bài)
 ```
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: **3** — Kiểm tra tiến độ commit của thành viên theo branch
+- Vì sao: Đây là pain point dễ đo nhất (70–140 phút/tuần, lặp hằng ngày), có bằng chứng thực tế từ trải nghiệm làm trưởng nhóm. Problem ảnh hưởng trực tiếp đến kết quả của cả nhóm, không chỉ cá nhân — và khó giải bằng ý chí thuần túy vì phụ thuộc vào hành vi nhiều người.
+- Câu hỏi muốn nhóm phản biện: Liệu bottleneck thực sự nằm ở "thiếu công cụ tổng hợp" hay là do "thành viên không commit đúng hạn"? Nếu là vấn đề kỷ luật thì giải pháp workflow/automation có thực sự giải quyết được gốc rễ không?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| "Card #1 (Đọc hiểu đề bài) có thể là vấn đề kỹ năng cá nhân, không phải vấn đề hệ thống — khó scale thành solution chung." | Đồng ý một phần | Đã thêm vào mục "Điều còn chưa chắc": cần phân biệt nguyên nhân là đề phức tạp hay kỹ năng đọc chưa tốt. |
+| "Card #3 (Review commit): vấn đề có thể là do thành viên thiếu kỷ luật, không phải thiếu tool — tự động hóa không giải quyết gốc rễ nếu nguyên nhân là con người." | Đồng ý | Đã đưa câu hỏi này vào mục "Card muốn pitch nhất" để nhóm phản biện kỹ hơn trước khi kết luận về hướng giải. |
+| "Success metric của Card #3 'dưới 20 phút/tuần' cần kiểm chứng — có thực tế không nếu nhóm có 5+ thành viên với nhiều file thay đổi?" | Đồng ý | Bổ sung metric thứ hai rõ hơn: "phát hiện phần thiếu trước 24h so với deadline", không chỉ đo thời gian thuần túy. |
 
 ---
 
