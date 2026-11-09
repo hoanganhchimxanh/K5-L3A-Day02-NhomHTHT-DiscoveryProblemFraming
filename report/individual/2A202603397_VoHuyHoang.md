@@ -217,19 +217,32 @@ Quy trình nháp hiện tại:
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**  
+Một số problem khá nhiều người cùng bị ảnh hưởng (như review bài lab trước khi nộp hay đọc hiểu đề bài lab)
+Một số idea ban đầu của tôi hơi mơ hồ
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**  
+Nhóm không bị solution-first
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**  
+Tôi thay đổi một vài ràng buộc của Problem #1 - Điền file AI-Logs.md vì sau khi nhận phản biện, tôi nhận ra việc AI đôi khi sẽ ghi lịch sử chat quá dài và không focus vào nội dung chính.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**  
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+**6.5. Điều khó nhất khi viết Problem Statement là gì?**  
+Điều khó nhất khi viết Problem Statement có lẽ là tính toán Success Metrics do nếu không có các số liệu cụ thể thì rất khó đoán được Success Metrics là bao nhiêu
+
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**  
+Trong lúc thực hiện team đã không hiểu nhau ở một số phần dẫn đến việc hoàn thành bài Lab tốn thời gian hơn, tôi muốn team trao đổi nhiều hơn
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Problem: Sau các buổi học, việc tổng hợp lại kiến thức và bài ôn tập rất khó và mất thời gian, tôi muốn hệ thống AI có thể tổng hợp lại nội dung học để có thể dễ dàng ôn tập khi về nhà.  
+Quy trình: 1. Sau buổi học, tổng hợp kiến thức trên lớp -> 2. Tìm kiếm tài liệu bên ngoài -> 3. Tổng hợp kiến thức -> 4. Ghi chép lại và nghĩ câu hỏi ôn tập -> 5. Ôn tập lại
+Boundary: Confirm kiến thức tổng hợp là chắc chắn đúng, cần HITL
+Mức can thiệp AI: Workflow
+Quyết định: Go
 
 ---
 
