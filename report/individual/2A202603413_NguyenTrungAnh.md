@@ -129,9 +129,9 @@ HIỆN TẠI — đơn xe máy vào giờ cao điểm
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: **1**: Đặt xe và canh app chờ tài xế nhận
+- Vì sao: Đây là cái đau gốc, xảy ra với mọi đơn giao: 16 đơn Lalamove trong 6 ngày (02–07/11/2026), cộng 1–2 chuyến ba gác/tự giao mỗi ngày. Một người là quản lý kế hoạch sản xuất phải kiêm luôn việc giao hàng và canh app từ lúc đặt tới lúc giao xong. Tôi đã tận mắt thấy khi làm ERP tại xưởng, và có hóa đơn thật làm bằng chứng chứ không chỉ là cảm nhận.
+- Câu hỏi muốn nhóm phản biện: Việc này có thật sự cần AI không, hay chỉ cần sửa quy trình (gom đơn theo khung giờ cố định, giữ một tài xế quen, giao việc đặt xe cho người khác) là đủ? Bottleneck thật là chờ tài xế nhận, hay là việc chỉ có đúng một người lo hết?
 
 ### AI đã phản biện card thế nào
 
